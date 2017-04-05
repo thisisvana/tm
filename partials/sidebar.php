@@ -8,7 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-        <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Arapey|Oranienbaum" rel="stylesheet">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -98,4 +97,3 @@
         </div>
 
         <?php include "partials/email.php"; ?>
-        

@@ -4,22 +4,22 @@
 // .bg {
 //     background-color: $light-grey;
 // }
-.page-header {
-  height: 100vh;
-}
+// .page-header {
+//   height: 100vh;
+// }
 .logo {
-    width: 11rem;
-    padding-top: 1rem;
+    width: 6rem;
+
     margin:auto;
 
     @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
-            display: block;
+            // display: block;
             width:7rem;
             // margin-left: 45%;
     }
     @media screen and (max-width: $mobile-max) {
             width: 6rem;
-            margin-top: 3rem;
+          
 
     }
 }
@@ -47,7 +47,8 @@ li{
 }
 
 .main-menu {
-  display: block;
+  display: flex;
+  // display: block;
   padding: 0;
   margin: 2rem 0;
   @media screen and (max-width: $mobile-max) {
