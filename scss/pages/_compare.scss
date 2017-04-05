@@ -1,5 +1,7 @@
 
-
+.policies-cont {
+  height: 100vh;
+}
 .compare-p {
   display: flex;
   align-items: center;
@@ -38,18 +40,20 @@
 .compare-header {
   background-color: $dark-grey;
 
-  // opacity: 0.9;
+  opacity: 0.9;
 
   height: 100vh;
   // display: flex;
 }
-// .parties-pol {
-//   height: 27rem;
-//   justify-content: space-between;
-//   display: flex;
-//   flex-direction: column;
-//
-// }
+.parties-pol {
+  height: 27rem;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+
+}
 .party-list{
   li{
     color: white;
@@ -64,7 +68,7 @@
   width: 100%;
 }
 .all-party-policy {
-  background-color: white;
+  // background-color: white;
   padding-top: 0;
 
 
@@ -197,7 +201,7 @@
     .compare-header {
         height:100%;
         overflow:auto;
-        padding-top:20px;
+
 
         .compare-top-left {
             width:100%;
@@ -309,7 +313,7 @@
     .compare-header {
         height:100%;
         overflow:auto;
-        padding-top:20px;
+
 
         .compare-top-left {
             width:100%;
@@ -407,18 +411,17 @@
   display: none;
 }
 .topic1{
-  // background-color: red;
-  display:none;
+
+
+
 }
 .topic2{
-  // background-color: blue;
-  display: none;
+
+
 }
 .topic3{
-  // background-color: yellow;
-  display: none;
+
 }
 .topic4{
-  // background-color: green;
-  display: none;
+
 }

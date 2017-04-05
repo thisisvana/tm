@@ -1,0 +1,32 @@
+{
+  "name": "week12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "scripts": {
+    "scss": "node-sass scss/styles.scss -o css",
+    "autoprefixer": "postcss -u autoprefixer -r css/*",
+    "serve": "browser-sync start --proxy localhost/T2week12 --files css/*.css, js/*.js, *.html, *.php, partials/*.php --browser Chrome",
+    "buildcss": "npm run scss && npm run autoprefixer",
+    "watchcss": "onchange \"scss\" -- npm run buildcss",
+    "watchall": "npm-run-all -p serve watchcss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thisisvana/T2week12.git"
+  },
+  "author": "silvana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thisisvana/T2week12/issues"
+  },
+  "homepage": "https://github.com/thisisvana/T2week12#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "browser-sync": "^2.18.7",
+    "node-sass": "^4.5.0",
+    "npm-run-all": "^4.0.1",
+    "onchange": "^3.2.1",
+    "postcss-cli": "^2.6.0"
+  }
+}
