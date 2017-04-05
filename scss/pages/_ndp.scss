@@ -1,0 +1,41 @@
+.ndp-banner {
+  background-color: $ndp;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  // opacity: 0.9;
+  .p-logo{
+    width: 20%;
+    padding-bottom: 1rem;
+  }
+  .party-leader{
+    width: 20%;
+    opacity: 0.7;
+    padding-right: 1rem;
+    @media screen and (max-width: $mobile-max){
+      width: 30%;
+
+    }
+
+  }
+  h1{
+    font-size: 4rem;
+    @media screen and (max-width: $mobile-max){
+      font-size: 2rem;
+    }
+  }
+
+}
+.party-info {
+  background-color: white;
+  // opacity: 0.9;
+  padding: 4rem;
+  h1{
+    color: $dark-grey;
+  }
+}
+.party-history{
+  background-color: $dark-grey;
+  height:15rem;
+  overflow: auto;
+}

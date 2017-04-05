@@ -1,0 +1,424 @@
+
+
+.compare-p {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  li {
+    flex:1;
+    cursor: pointer;
+    font-size: 2rem;
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
+      font-size: 1rem;
+    }
+    @media screen and (max-width: $mobile-max){
+      font-size: 0.9rem;
+    }
+    &:first-child {
+      color: $ndp;
+
+
+    }
+    &:nth-child(2){
+      color: $green;
+
+    }
+    &:nth-child(3){
+      color: $liberal;
+
+    }
+    &:nth-child(4){
+      color: $conservative;
+
+    }
+  }
+}
+
+.compare-header {
+  background-color: $dark-grey;
+
+  // opacity: 0.9;
+
+  height: 100vh;
+  // display: flex;
+}
+// .parties-pol {
+//   height: 27rem;
+//   justify-content: space-between;
+//   display: flex;
+//   flex-direction: column;
+//
+// }
+.party-list{
+  li{
+    color: white;
+    a{
+      cursor: pointer;
+
+    }
+  }
+
+}
+.party-topic-list {
+  width: 100%;
+}
+.all-party-policy {
+  background-color: white;
+  padding-top: 0;
+
+
+}
+
+.policies {
+  padding: 0;
+  display: flex;
+
+  li {
+    flex: 1;
+    font-size: 0.9rem;
+
+  }
+  @media screen and (max-width: $mobile-max){
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
+    flex-wrap: wrap;
+  }
+}
+
+.parties-pol {
+  padding: 1.5rem;
+  border: 0.2rem solid $light-grey;
+}
+
+
+@media screen and (max-width: 39.9375em) {
+    .compare-header {
+        height:100%;
+        overflow:auto;
+        padding-top:0;
+
+        .compare-top-left {
+            width:100%;
+
+
+            .party-list {
+                width:100%;
+                padding:0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                li {
+
+                    flex:1;
+                    color:$light-grey;
+
+                    display: flex;
+                    // color:$dark-grey;
+
+                    border:2px solid black;
+                    padding: 0.5rem;
+                    text-align: center;
+                    font-size:0.8rem;
+                }
+
+                li:nth-child(1){
+                    border-color: $ndp;
+                }
+                li:nth-child(2){
+                    border-color: $green;
+                }
+                li:nth-child(3){
+                    border-color: $liberal;
+                }
+                li:nth-child(4){
+                    border-color: $conservative;
+                }
+
+            }
+
+            .party-topic-list {
+                height:100%;
+                width:100%;
+                padding-top:30px;
+                padding-bottom:40px;
+                text-align:center;
+                color:$dark-grey;
+                font-size: 1em;
+                .list {
+                    border:1px $dark-grey solid;
+                    margin: 10px 0 10px 0;
+                    padding:20px;
+                    text-align: center;
+                }
+
+        }
+    }
+
+    .top-two-btn {
+        display: flex;
+        text-align: center;
+        margin:1rem 0;
+        .two-btn {
+            flex: 1;
+            font-size:1em;
+            padding:1rem;
+            margin:0 10px 0 10px;
+            // border:1px solid black;
+        }
+    }
+    .all-party-policy {
+        overflow: auto;
+        padding-top:20px;
+        h2 {
+            font-size: 1.5em;
+            padding-left:20px;
+            margin-top:20px;
+            margin-bottom:10px;
+        }
+
+        p {
+            font-size: 0.7em;
+            padding:10px;
+        }
+
+    }
+    .voteBtn {
+        width:100%;
+        margin:auto;
+    }
+
+ }
+}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    /* styles for medium only */
+    .compare-header {
+        height:100%;
+        overflow:auto;
+        padding-top:20px;
+
+        .compare-top-left {
+            width:100%;
+
+
+            .party-list {
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                width:100%;
+                padding:0;
+
+                li {
+                    flex:1;
+                    color:$light-grey;
+                    border:2px solid black;
+                    padding: 20px;
+                    text-align: center;
+                    font-size:0.9rem;
+                }
+
+                li:nth-child(1){
+                    border-color: $ndp;
+                }
+                li:nth-child(2){
+                    border-color: $green;
+                }
+                li:nth-child(3){
+                    border-color: $liberal;
+                }
+                li:nth-child(4){
+                    border-color: $conservative;
+                }
+
+            }
+            .party-topic-list {
+                //display:flex;
+
+                height:100%;
+                width:100%;
+                padding-top:30px;
+                padding-bottom:40px;
+                text-align: center;
+
+
+            }
+
+
+        }
+        .top-two-btn {
+          display: flex;
+          text-align: center;
+          margin-top:30px;
+          .two-btn {
+              flex: 1;
+              align-items: center;
+              justify-content: center;
+              font-size:1em;
+              padding:20px;
+              margin:10px;
+
+          }
+            h3 {
+                font-size:0.8em;
+                margin:10px auto;
+                padding:1rem;
+                text-align: center;
+                // border:1px solid;
+            }
+        }
+    }
+
+    .all-party-policy {
+        overflow: auto;
+        padding-top:30px;
+        h2 {
+            font-size: 1.5em;
+
+        }
+
+        p {
+            font-size: 0.7em;
+            padding:10px;
+            margin-bottom:30px;
+        }
+        .voteBtn {
+            margin-bottom: 50px;
+            width:100%;
+        }
+    }
+     .pie-chart {
+        display:none;
+        //background-color: black;
+        position:absolute;
+        top:60%;
+        transform:translateY(-50%);
+        //min-width:1000px;
+
+        height: 420px;
+        max-width: 100%;
+        margin:auto;
+
+    }
+
+}
+
+@media screen and (min-width: 64em) {
+    /* styles for large and onward only */
+    .compare-header {
+        height:100%;
+        overflow:auto;
+        padding-top:20px;
+
+        .compare-top-left {
+            width:100%;
+
+
+            .party-list {
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                width:100%;
+                padding:0;
+
+                li {
+                    flex:1;
+
+                    color:$light-grey;
+                    border: 2px solid;
+                    padding: 20px;
+                    text-align: center;
+                    font-size:1.5em;
+                }
+
+                li:nth-child(1){
+                    border-color: $ndp;
+                }
+                li:nth-child(2){
+                    border-color: $green;
+                }
+                li:nth-child(3){
+                    border-color: $liberal;
+                }
+                li:nth-child(4){
+                    border-color: $conservative;
+                }
+            }
+            .party-topic-list {
+                height:100%;
+                width:100%;
+                padding-top:30px;
+                padding-bottom:40px;
+                text-align: center;
+
+            }
+
+        }
+    }
+    .top-two-btn {
+        text-align: center;
+
+        .two-btn {
+            width:100%;
+            flex: 1;
+            font-size:1em;
+            padding:20px;
+            margin:20px 0;
+
+        }
+    }
+    .all-party-policy {
+        overflow: auto;
+        padding-top:50px;
+        h2 {
+            font-size: 2rem;
+
+        }
+
+        p {
+            font-size: 0.7em;
+            padding:10px;
+            margin-bottom:30px;
+        }
+        .voteBtn {
+
+            width:100%;
+        }
+    }
+
+
+}
+.pie-chart {
+    display:none;
+    // background-color: black;
+    // position:absolute;
+    // min-width:1000px;
+
+    height: 60%;
+    width: 100%;
+
+}
+.chart-graphic {
+  width:100%;
+  padding: 1rem 0;
+}
+.hide{
+  display: none;
+}
+.topic1{
+  // background-color: red;
+  display:none;
+}
+.topic2{
+  // background-color: blue;
+  display: none;
+}
+.topic3{
+  // background-color: yellow;
+  display: none;
+}
+.topic4{
+  // background-color: green;
+  display: none;
+}

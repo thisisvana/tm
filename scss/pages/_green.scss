@@ -1,0 +1,29 @@
+.green-banner {
+  background-color: $green;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  .p-logo{
+    width: 20%;
+    padding-bottom: 1rem;
+    opacity: 0.5;
+  }
+  .party-leader{
+    width: 20%;
+    opacity: 0.7;
+    padding-right: 1rem;
+    @media screen and (max-width: $mobile-max){
+        width: 30%;
+    }
+
+
+    // float:right;
+  }
+  h1{
+    font-size: 4rem;
+    @media screen and (max-width: $mobile-max){
+      font-size: 2rem;
+    }
+  }
+
+}

@@ -1,0 +1,30 @@
+.liberal-banner {
+  background-color: $liberal;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  .p-logo{
+    width: 20%;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    opacity: 0.9;
+    @media screen and (max-width: $mobile-max){
+      width: 25%;
+    }
+  }
+  .party-leader{
+    width: 20%;
+    opacity: 0.8;
+    padding-right: 1rem;
+    @media screen and (max-width: $mobile-max){
+      width: 30%;
+    }
+  }
+  h1{
+    font-size: 4rem;
+    @media screen and (max-width: $mobile-max){
+      font-size: 2rem;
+    }
+  }
+
+}

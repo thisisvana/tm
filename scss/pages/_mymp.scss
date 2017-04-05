@@ -1,0 +1,420 @@
+.map-banner {
+  background-color: $dark-grey;
+  opacity: 0.9;
+  height: 100vh;
+  display: flex;
+  #top-h1{
+    color: white;
+  }
+
+}
+
+@media screen and (max-width: 39.9375em) {
+    /* styles for small only */
+    // .video-overlay{
+    //         background-color :black;
+    //         //opacity:0.5;
+    //         .video-fit {
+    //             width: 100%;
+    //             height: 100%;
+    //             position: absolute;
+    //             padding:0;
+    //             margin:0;
+    //             left: 0px;
+    //             top: 0px;
+    //             z-index: -1;
+    //             overflow:hidden;
+    //             video {
+    //                 position: absolute;
+    //                 min-width:100%;
+    //                 min-height:100%;
+    //                 left: 0;
+    //                 top:0;
+    //             }
+    //         }
+    //     }
+
+#top-h1 {
+    font-size: 2rem;
+    // color:black;
+    margin: 0;
+}
+.svg-map {
+    // position: absolute;
+    // left: 5%;
+    // transform: translateX(-50%);
+    // top:80%;
+    // transform:translateY(-50%);
+    width:200%;
+    height: 100%;
+    margin-right: 10%;
+    margin-top: -40%;
+
+
+
+    path {
+        fill: white;
+        transition: 0.5s all ease;
+    }
+}
+
+
+#modalBox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    // right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+    overflow: auto;
+
+    #pro-name {
+        font-size: 50px;
+        color : white;
+        justify-content: center;
+    }
+
+    .modalInner {
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        -webkit-text-align:center;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        width:100%;
+    }
+}
+
+.libe-color {
+    background-color:$liberal;
+}
+
+.cons-color {
+    background-color:$conservative;
+}
+
+.ndp-color {
+    background-color: $ndp;
+}
+
+.gree-color {
+    background-color:$green;
+    color:black;
+}
+
+.bloc-color {
+    background-color: gray;
+}
+
+.inde-color {
+    background-color:$dark-grey;
+}
+h1 {
+    text-align: center;
+}
+
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//     margin: 0;
+// }
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    font-size: 14px;
+    margin:auto;
+
+
+    th, td {
+        text-align: left;
+        padding: 10px;
+    }
+
+}
+
+/*
+    td {
+        width:25%;
+        padding:30px;
+    }
+*/
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    /* styles for medium only */
+
+.video-overlay{
+            background-color :black;
+            //opacity:0.5;
+            .video-fit {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                padding:0;
+                margin:0;
+                left: 0px;
+                top: 0px;
+                z-index: -1;
+                overflow:hidden;
+                video {
+                    position: absolute;
+                    min-width:100%;
+                    min-height:100%;
+                    left: 0;
+                    top:0;
+                }
+            }
+        }
+
+#top-h1 {
+    font-size: 3rem;
+    color:black;
+    position: absolute;
+    left: 50%;
+}
+.svg-map {
+    position: absolute;
+    //left: 50%;
+    transform: translateX(-50%);
+    left: 40%;
+    top:50%;
+    transform:translateY(-50%);
+
+
+    path {
+        fill: white;
+        transition: 0.5s all ease;
+    }
+}
+
+
+#modalBox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+    overflow: auto;
+
+    #pro-name {
+        font-size: 40px;
+        color : white;
+        justify-content: center;
+    }
+
+
+
+    .modalInner {
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        -webkit-text-align:center;
+        // left: 5%;
+        //transform: translateX(-50%);
+        color: white;
+        width:80%;
+    }
+}
+.libe-color {
+    background-color:$liberal;
+}
+
+.cons-color {
+    background-color:$conservative;
+}
+
+.ndp-color {
+    background-color: $ndp;
+}
+
+.gree-color {
+    background-color:$green;
+    color:black;
+}
+
+.bloc-color {
+    background-color: gray;
+}
+
+.inde-color {
+    background-color: $dark-grey;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    font-size:13px;
+
+
+    th, td {
+        text-align: left;
+        padding:15px;
+    }
+}
+
+/*
+    td {
+        width:25%;
+        padding:30px;
+    }
+*/
+
+}
+@media screen and (min-width: 64em) {
+    /* styles for large and onward only */
+
+.video-overlay{
+            background-color :black;
+            //opacity:0.5;
+            .video-fit {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                padding:0;
+                margin:0;
+                left: 0px;
+                top: 0px;
+                z-index: -1;
+                overflow:hidden;
+                video {
+                    position: absolute;
+                    min-width:100%;
+                    min-height:100%;
+                    left: 0;
+                    top:0;
+                }
+            }
+        }
+
+#top-h1 {
+    font-size: 50px;
+    color:black;
+    position: absolute;
+    left: 50%;
+
+}
+.svg-map {
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    text-align:center;
+
+    width:90%;
+
+    path {
+        //fill: grey;
+        transition: 0.5s all ease;
+    }
+}
+
+
+#modalBox {
+    display: none;
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    left: 28%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+    overflow: auto;
+
+    #pro-name {
+        font-size: 70px;
+        color : white;
+        justify-content: center;
+    }
+
+
+
+    .modalInner {
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        -webkit-text-align:center;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        width:90%;
+    }
+}
+.libe-color {
+    background-color:$liberal;
+}
+
+.cons-color {
+    background-color:$conservative;
+}
+
+.ndp-color {
+    background-color: $ndp;
+}
+
+.gree-color {
+    background-color:$green;
+    color:black;
+}
+.bloc-color {
+    background-color: gray;
+}
+
+.inde-color {
+    background-color: $dark-grey;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size : 18px;
+
+
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+
+}
+
+/*
+    td {
+        width:25%;
+        padding:30px;
+    }
+*/
+}
