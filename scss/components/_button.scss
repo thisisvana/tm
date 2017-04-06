@@ -8,13 +8,13 @@
         background-color: transparent;
         text-align: center;
         color: $lw;
-        border: 0.2rem solid $brand-color;
+        border: 0.1rem solid $brand-color;
         background-color: $brand-color;
         a{
           text-decoration: none;
         }
         &:hover {
-          border: 0.2rem solid $brand-color;
+          border: 0.1rem solid $brand-color;
           background-color: transparent;
           color: $mid-grey;
           cursor: pointer;

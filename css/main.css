@@ -2535,18 +2535,20 @@ body {
     width: 100%; }
 
 .register {
-  border: 0.1rem solid #0683d2; }
+  border: 0.1rem solid #444444; }
   .register li {
     padding: 1rem;
     width: 10rem; }
     .register li:first-child {
-      background-color: #1e97e4; }
+      background-color: #d96115; }
+      .register li:first-child:hover {
+        background-color: rgba(217, 97, 21, 0.9); }
     .register li:last-child {
       background-color: #0683d2; }
+      .register li:last-child:hover {
+        background-color: rgba(6, 131, 210, 0.7); }
     .register li a {
       color: white; }
-    .register li:hover {
-      opacity: 0.8; }
 
 .mobile-menu {
   position: absolute;
@@ -2569,7 +2571,7 @@ ul {
   @media screen and (max-width: 39.9375rem) {
     .main-menu {
       display: none;
-      background-color: #2b2b2b; } }
+      background-color: #2f3336; } }
   .main-menu li {
     flex: 1;
     font-size: 1rem;
@@ -2602,7 +2604,7 @@ form {
   font-size: 0.8rem; }
   form input {
     background-color: transparent;
-    border: 0.2rem solid #999999;
+    border: 0.1rem solid #444444;
     padding: 1rem;
     width: 100%;
     color: #999999; }
@@ -2612,6 +2614,10 @@ form {
   form #send-btn {
     width: 100%; }
 
+/**
+ * Modal
+ * 1. Ensure this sits above everything when visible
+ */
 .social-nav {
   display: flex;
   align-items: center;
@@ -2619,161 +2625,6 @@ form {
   .social-nav li {
     width: 5rem; }
     .social-nav li a {
-      color: #0683d2; }
-
-.page-footer {
-  background-color: #2b2b2b; }
-
-/**
- * Modal
- * 1. Ensure this sits above everything when visible
- */
-@media screen and (max-width: 39.9375rem) {
-  .demo {
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
-    width: 40%; }
-    .demo .modal-show {
-      padding: 0.5rem;
-      font-size: 0.8rem; } }
-
-.modal {
-  position: fixed;
-  z-index: 1000;
-  /* 1 */
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  width: 100%;
-  height: 100%; }
-
-.modal.is-visible {
-  visibility: visible; }
-
-/* Prevent scrolling on <html> when `.modal` is visible */
-.no-scroll {
-  overflow: hidden; }
-
-/* Modal Overlay & Container */
-.modal-overlay,
-.modal-container {
-  position: fixed;
-  z-index: 90000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s ease 0.3s, opacity 0.3s ease; }
-
-.modal-overlay {
-  background: rgba(0, 0, 0, 0.8); }
-
-.modal.is-visible .modal-overlay,
-.modal.is-visible .modal-container {
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0s; }
-
-/* 1. Allow scrolling on `.modal-container` in case `.modal-wrapper` is taller than the viewport */
-.modal.is-visible .modal-container {
-  overflow: auto;
-  /* 1 */
-  -webkit-overflow-scrolling: touch;
-  /* 1 */ }
-
-/* Modal Wrapper */
-.modal-wrapper {
-  position: absolute;
-  z-index: 10000;
-  top: 3em;
-  left: 50%;
-  width: 100%;
-  max-width: 600px;
-  margin-left: -50%;
-  background-color: #2b2b2b;
-  box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.35); }
-
-/* Modal Transition */
-.modal-transition {
-  transition: visibility 0.3s 0.12s, opacity 0.3s 0.12s, transform 0.3s 0.12s;
-  transform: translateY(-10%);
-  opacity: 0; }
-
-.modal.is-visible .modal-transition {
-  transform: translateY(0);
-  opacity: 1; }
-
-.modal-header,
-.modal-content {
-  padding: 1em; }
-
-/* Modal Header */
-.modal-header {
-  position: relative;
-  background-color: #2b2b2b;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
-  border-bottom: 1px solid #e8e8e8; }
-
-/* Modal Heading */
-.modal-heading {
-  font-size: 1.125em;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-/* Modal Close Button */
-.modal-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1.125em;
-  color: #0683d2;
-  background: #fff;
-  border: 0; }
-
-.modal-close:hover {
-  color: #0683d2; }
-
-/* Modal Content */
-.modal-content > *:first-child {
-  margin-top: 0; }
-
-.modal-content > *:last-child {
-  margin-bottom: 0; }
-
-@media (min-width: 600px) {
-  /* Modal Wrapper */
-  .modal-wrapper {
-    top: 6em;
-    margin-left: -300px; } }
-.page-footer {
-  background-image: url("../img/texture-blue.jpg");
-  margin-top: 3rem; }
-
-.overlay {
-  background-color: rgba(40, 44, 52, 0.9);
-  margin: 0; }
-
-.footer-box {
-  text-align: center;
-  padding: 3rem 0; }
-  @media screen and (max-width: 39.9375rem) {
-    .footer-box {
-      padding: 1.5rem 0; } }
-
-.social-icons {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .social-icons li {
-    margin: 0 1rem; }
-    .social-icons li a {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -2782,42 +2633,36 @@ form {
       border: 0.125rem solid #0683d2;
       border-radius: 50%;
       color: #0683d2; }
-      .social-icons li a:hover {
+      .social-nav li a:hover {
         text-decoration: none;
         color: #ededed;
         background-color: #0683d2; }
 
-.footer-icon {
-  color: #0683d2; }
+.page-footer {
+  background-color: rgba(47, 51, 54, 0.9);
+  padding: 4rem; }
+
+.sub-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
+  background-color: #2f3336; }
+  @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
+    .sub-footer {
+      flex-direction: column; } }
+  @media screen and (max-width: 39.9375rem) {
+    .sub-footer {
+      flex-direction: column; } }
+
+.footer-info p {
+  font-size: 0.9rem; }
+@media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
+  .footer-info {
+    margin-top: 2rem; } }
 
 .footer-form-box {
-  display: flex;
-  width: 30rem;
-  align-items: stretch;
-  height: 3rem;
-  margin: 0 auto; }
-  .footer-form-box input {
-    flex-grow: 1;
-    border: 2px solid #0683d2;
-    background-color: transparent;
-    padding-left: 1rem;
-    font-size: 0.9rem; }
-    .footer-form-box input:focus {
-      outline: none;
-      box-shadow: none; }
-  @media screen and (max-width: 39.9375rem) {
-    .footer-form-box {
-      width: 18rem; } }
-  .footer-form-box button {
-    border-radius: 0;
-    width: 5rem;
-    background-color: #0683d2;
-    border: 2px solid #0683d2;
-    border-left: none;
-    color: #2b2b2b; }
-    .footer-form-box button:hover {
-      background-color: transparent;
-      color: #444444; }
+  width: 30rem; }
 
 .btn {
   width: 10rem;
@@ -2825,18 +2670,18 @@ form {
   background-color: transparent;
   text-align: center;
   color: #eeebeb;
-  border: 0.2rem solid #0683d2;
+  border: 0.1rem solid #0683d2;
   background-color: #0683d2; }
   .btn a {
     text-decoration: none; }
   .btn:hover {
-    border: 0.2rem solid #0683d2;
+    border: 0.1rem solid #0683d2;
     background-color: transparent;
     color: #999999;
     cursor: pointer; }
 
 #bg-bar {
-  background-color: #444444; }
+  background-color: #2f3336; }
   #bg-bar ul {
     background-color: transparent; }
 
@@ -2844,7 +2689,7 @@ form {
   padding: 0; }
 
 .features {
-  background-color: #2b2b2b;
+  background-color: #2f3336;
   padding: 2rem; }
 
 .feat {
@@ -2864,6 +2709,13 @@ form {
 
 .text-center {
   padding: 3rem; }
+  .text-center .btn {
+    padding: 2rem;
+    background-color: #d96115;
+    border: 0.1rem solid #d96115; }
+    .text-center .btn:hover {
+      background-color: transparent;
+      border: 0.1rem solid #d96115; }
 
 .green-banner {
   background-color: #22a77e;
