@@ -39,8 +39,8 @@
             </div>
           </li>
           <li><a href="index.php">Home</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#">Who we are</a></li>
+          <li><a href="#">What we do</a></li>
           <li><a href="#">Four</a></li>
           <li><a href="contact.php">Contact Us</a></li>
             <ul class="register">

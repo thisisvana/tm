@@ -2739,30 +2739,26 @@ form {
       .green-banner h1 {
         font-size: 2rem; } }
 
-.liberal-banner {
-  background-color: #e6263c;
+.green-banner {
+  background-color: #22a77e;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end; }
-  .liberal-banner .p-logo {
+  .green-banner .p-logo {
     width: 20%;
     padding-bottom: 1rem;
-    padding-left: 2rem;
-    opacity: 0.9; }
-    @media screen and (max-width: 39.9375rem) {
-      .liberal-banner .p-logo {
-        width: 25%; } }
-  .liberal-banner .party-leader {
+    opacity: 0.5; }
+  .green-banner .party-leader {
     width: 20%;
-    opacity: 0.8;
+    opacity: 0.7;
     padding-right: 1rem; }
     @media screen and (max-width: 39.9375rem) {
-      .liberal-banner .party-leader {
+      .green-banner .party-leader {
         width: 30%; } }
-  .liberal-banner h1 {
+  .green-banner h1 {
     font-size: 4rem; }
     @media screen and (max-width: 39.9375rem) {
-      .liberal-banner h1 {
+      .green-banner h1 {
         font-size: 2rem; } }
 
 .conservative-banner {
