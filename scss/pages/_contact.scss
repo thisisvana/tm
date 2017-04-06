@@ -1,41 +1,49 @@
-.ndp-banner {
-  background-color: $ndp;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  // opacity: 0.9;
-  .p-logo{
-    width: 20%;
-    padding-bottom: 1rem;
+.map {
+  width: 100%;
+  padding: 0;
+  iframe {
+    width:100%;
+    border: none;
   }
-  .party-leader{
-    width: 20%;
-    opacity: 0.7;
-    padding-right: 1rem;
-    @media screen and (max-width: $mobile-max){
-      width: 30%;
+}
 
-    }
-
-  }
-  h1{
-    font-size: 4rem;
-    @media screen and (max-width: $mobile-max){
-      font-size: 2rem;
-    }
-  }
+.form-box {
+  width:50%;
+  padding: 0;
 
 }
-.party-info {
+
+.contact-form {
+    width: 100%;
+    margin: 0;
+    background-color: rgba($brand-color, 1);
+    font-family: sans-serif;
+    padding: 2rem;
+}
+#signup-form {
+  width:100%;
   background-color: white;
-  // opacity: 0.9;
-  padding: 4rem;
-  h1{
-    color: $dark-grey;
+  .btn{
+    color:$mid-grey;
+    &:hover{
+      background-color: $brand-color;
+    }
   }
 }
-.party-history{
-  background-color: $dark-grey;
-  height:15rem;
-  overflow: auto;
+
+input[type="text"],input[type="password"], #form-message {
+    display: block;
+    width: 100%;
+    background-color: #1D1D1E;
+    border: none;
+    outline: none;
+    line-height: 2.5;
+    // border: 0.1rem solid $dark-grey;
+}
+input[type="submit"]{
+    background-color: transparent;
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 1rem;
+    // border: 0.1rem solid $dark-grey;
 }

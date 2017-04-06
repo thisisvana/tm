@@ -24,7 +24,7 @@
         <!-- <ul class="menu">
           <li class="menu-text"> -->
             <div class="logo">
-              <a href="index.php"><img src="img/logo-project.svg" alt="logo"></a>
+              <a href="index.php"><img src="img/buscemi.svg" alt="logo"></a>
             </div>
           </li>
           <!-- <li><a href="#">One</a></li>
@@ -35,20 +35,20 @@
         <ul class="main-menu">
           <li class="menu-text hide-for-small-only">
             <div class="logo">
-              <a href="index.php"><img src="img/logo-project.svg" alt="logo"></a>
+              <a href="index.php"><img src="img/buscemi.svg" alt="logo"></a>
             </div>
           </li>
           <li><a href="index.php">Home</a></li>
-          <li><a href="about.php">Who we are</a></li>
-          <li><a href="services.php">What we do</a></li>
-          <li><a href="testimonials.php">Testimonials</a></li>
+          <li><a href="about.php">Works</a></li>
+
           <li><a href="contact.php">Contact Us</a></li>
             <ul class="register">
-              <li><a href="#">Sign Up</a></li>
-              <li><a href="#">Login</a></li>
+              <!-- <li><a href="#">Books</a></li> -->
+              <!-- <li><a href="#"></a></li> -->
             </ul>
         </ul>
       </div>
     </div>
+
   </header>
     <!-- End Top Bar -->

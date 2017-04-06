@@ -9,56 +9,56 @@ $(function() {
 //Slider for testimonilas start here
 
 //Get an array of sliders
-var slides = document.getElementsByClassName("testimonials-block");
-
-
-//Hide all slides, except the first when the page is loaded
-for (var i = 0; i < slides.length; i++) {
-  if(i !== 0) {
-  slides[i].style.display = "none";
-  }
-}
-
-
-//Slide Function
-var index = 0;
-function showTestimonials(n) {
-
-  index=index + n;
-
-  if(index > slides.length - 1) {
-      index = 0;
-  }
-
-  if(index < 0) {
-      index = slides.length - 1;
-  }
-
-  for (var i = 0; i < slides.length; i++) {
-      if (i === index) {
-          slides[i].style.display = "block";
-      }
-      else {
-          slides[i].style.display = "none";
-      }
-  }
-
-
-} //Slider testimonilas ends here
-
-var slideIndex = 0;
-var slideshow=setInterval(carousel, 3000);// Change image every 3 seconds
-var images = document.getElementsByClassName("mySlides");
-var i;
-
-for (i = 0; i < images.length; i++) {
-     if(i === images.length -1) {
-       images[i].style.display = "block";
-     } else {
-       images[i].style.display = "none";
-     }
-}
-
+// var slides = document.getElementsByClassName("testimonials-block");
+//
+//
+// //Hide all slides, except the first when the page is loaded
+// for (var i = 0; i < slides.length; i++) {
+//   if(i !== 0) {
+//   slides[i].style.display = "none";
+//   }
+// }
+//
+//
+// //Slide Function
+// var index = 0;
+// function showTestimonials(n) {
+//
+//   index=index + n;
+//
+//   if(index > slides.length - 1) {
+//       index = 0;
+//   }
+//
+//   if(index < 0) {
+//       index = slides.length - 1;
+//   }
+//
+//   for (var i = 0; i < slides.length; i++) {
+//       if (i === index) {
+//           slides[i].style.display = "block";
+//       }
+//       else {
+//           slides[i].style.display = "none";
+//       }
+//   }
+//
+//
+// } //Slider testimonilas ends here
+//
+// var slideIndex = 0;
+// var slideshow=setInterval(carousel, 3000);// Change image every 3 seconds
+// var images = document.getElementsByClassName("mySlides");
+// var i;
+//
+// for (i = 0; i < images.length; i++) {
+//      if(i === images.length -1) {
+//        images[i].style.display = "block";
+//      } else {
+//        images[i].style.display = "none";
+//      }
+// }
+//
 
 
   // var loc = window.location.pathname;
@@ -119,68 +119,68 @@ for (i = 0; i < images.length; i++) {
 // });
 //
 //
-// (function($){
-// 	function floatLabel(inputType){
-// 		$(inputType).each(function(){
-// 			var $this = $(this);
-// 			// on focus add cladd active to label
-// 			$this.focus(function(){
-// 				$this.next().addClass("active");
-// 			});
-// 			//on blur check field and remove class if needed
-// 			$this.blur(function(){
-// 				if($this.val() === '' || $this.val() === 'blank'){
-// 					$this.next().removeClass();
-// 				}
-// 			});
-// 		});
-// 	}
-// 	// just add a class of "floatLabel to the input field!"
-// 	floatLabel(".floatLabel");
-// })(jQuery);
+(function($){
+	function floatLabel(inputType){
+		$(inputType).each(function(){
+			var $this = $(this);
+			// on focus add cladd active to label
+			$this.focus(function(){
+				$this.next().addClass("active");
+			});
+			//on blur check field and remove class if needed
+			$this.blur(function(){
+				if($this.val() === '' || $this.val() === 'blank'){
+					$this.next().removeClass();
+				}
+			});
+		});
+	}
+	// just add a class of "floatLabel to the input field!"
+	floatLabel(".floatLabel");
+})(jQuery);
+
+var html = $('html'),
+    demo = $('.demo'),
+		modal = $('.modal'),
+    modalShow = $('.modal-show'),
+    modalHide = $('.modal-hide'),
+    modalWrapper = $('.modal-wrapper');
+
+// Modal Show
+modalShow.on('click', function(e) {
+  // e.preventDefault();
+  html.addClass('no-scroll');
+  modal.addClass('is-visible');
+  demo.attr('aria-hidden', 'true');
+  modal.attr({
+    'aria-hidden': 'false',
+    'open': 'true',
+    'tabindex': '0'
+  });
+});
+
+// Modal Hide
+modalHide.on('click', function(e) {
+  // e.preventDefault();
+  html.removeClass('no-scroll');
+  modal.removeClass('is-visible');
+  demo.attr('aria-hidden', 'false');
+  modal.attr('aria-hidden', 'true');
+  modal.removeAttr('open tabindex');
+});
+
+//Prevent toggle event from bubbling
+modalWrapper.on('click', function(e) {
+  e.stopPropagation();
+});
 //
-// var html = $('html'),
-//     demo = $('.demo'),
-// 		modal = $('.modal'),
-//     modalShow = $('.modal-show'),
-//     modalHide = $('.modal-hide'),
-//     modalWrapper = $('.modal-wrapper');
 //
-// // Modal Show
-// modalShow.on('click', function(e) {
-//   // e.preventDefault();
-//   html.addClass('no-scroll');
-//   modal.addClass('is-visible');
-//   demo.attr('aria-hidden', 'true');
-//   modal.attr({
-//     'aria-hidden': 'false',
-//     'open': 'true',
-//     'tabindex': '0'
-//   });
-// });
-//
-// // Modal Hide
-// modalHide.on('click', function(e) {
-//   // e.preventDefault();
-//   html.removeClass('no-scroll');
-//   modal.removeClass('is-visible');
-//   demo.attr('aria-hidden', 'false');
-//   modal.attr('aria-hidden', 'true');
-//   modal.removeAttr('open tabindex');
-// });
-//
-// //Prevent toggle event from bubbling
-// modalWrapper.on('click', function(e) {
-//   e.stopPropagation();
-// });
-//
-//
-// $('.img-container').click(function(){
-//   $(this).addClass('showImg');
-//   $(this).click(function(){
-//     $(this).removeClass('showImg');
-//   });
-// });
+$('.img-container').click(function(){
+  $(this).addClass('showImg');
+  $(this).click(function(){
+    $(this).removeClass('showImg');
+  });
+});
 //
 // // this varieble is current color of province //
 //      var mapSelected = "";
