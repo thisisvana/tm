@@ -10,30 +10,44 @@
 .logo {
     width: 6rem;
 
-    margin:auto;
+    margin: auto;
 
     @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
             // display: block;
-            width:7rem;
+            width:6rem;
+
             // margin-left: 45%;
     }
     @media screen and (max-width: $mobile-max) {
             width: 6rem;
-          
+            padding: 1rem;
+
 
     }
+    img{
+      width: 100%;
+    }
 }
-.side-b {
-  position: fixed;
-  background-color: $bg-color;
-  height: 100vh;
-  padding:0 2rem;
-  @media screen and (max-width: $mobile-max) {
-          position:relative;
-          height: 100%;
-
-
+.register {
+  border: 0.1rem solid $brand-color;
+  li{
+    padding: 1rem;
+    width:10rem;
+    &:first-child{
+      background-color: rgb(30, 151, 228);
+    }
+    &:last-child{
+      background-color: $brand-color;
+    }
+    a{
+      color: white;
+    }
+    &:hover{
+      opacity: 0.8;
+    }
   }
+
+}
 .mobile-menu {
   position: absolute;
   right: 1rem;
@@ -41,69 +55,33 @@
   font-size: 1.5rem;
 }
 
-}
 li{
   list-style: none;
 }
+ul{
+  padding:0;
+}
 
 .main-menu {
+
   display: flex;
-  // display: block;
+  align-items: center;
+  justify-content: center;
   padding: 0;
-  margin: 2rem 0;
+  margin: 0;
   @media screen and (max-width: $mobile-max) {
     display: none;
-    margin-top: 2rem;
+
 
     background-color: $bg-color;
   }
   li {
-    text-transform: uppercase;
+    flex: 1;
+    font-size: 1rem;
     text-align: center;
     width: 100%;
     margin: auto;
-    // height: 4rem;
 
-    &:first-child {
-      border: 0.2rem solid $ndp;
-      &:hover {
-        background-color: $ndp;
-      }
-    }
-    &:nth-child(2) {
-      border: 0.2rem solid $green;
-      &:hover {
-        background-color: $green;
-      }
-    }
-    &:nth-child(3) {
-      border: 0.2rem solid $liberal;
-      &:hover {
-        background-color: $liberal;
-      }
-    }
-    &:nth-child(4) {
-      border: 0.2rem solid $conservative;
-      &:hover {
-        background-color: $conservative;
-      }
-    }
-    &:nth-child(5) {
-      border: 0.2rem solid $brand-color;
-
-      &:hover {
-        background-color: $brand-color;
-        opacity: 0.7;
-
-      }
-    }
-    &:nth-child(6) {
-      border: 0.2rem solid $brand-color;
-      background-color: $brand-color;
-      &:hover {
-        background-color: transparent;
-      }
-    }
     @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
         width: 100%;
         font-size: 0.9rem;
@@ -112,13 +90,19 @@ li{
         width: 100%;
         font-size: 0.8rem;
     }
+    
   }
 
   a {
-    padding: 1rem;
+    padding: 0.5rem;
+    color: $mid-grey;
+    &:hover {
+      color: $brand-color;
+    }
   }
 
 }
+
 .sub-form {
 
   padding: 0;
@@ -150,14 +134,20 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  // padding: 2rem;
 
   li {
-    flex: 1;
-    align-items: center;
-    justify-content: center;
+    width: 5rem;
 
+    a{
+      color: $brand-color;
+
+    }
   }
+}
+.page-footer {
+  background-color: $bg-color;
+
 }
 
 //

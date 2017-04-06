@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <!-- <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"> -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="https://use.fontawesome.com/1845926a10.js"></script>
 </head>
@@ -19,22 +19,34 @@
 
     <!-- Start Top Bar -->
     <div class="top-bar" id="bg-bar">
-      <div class="mobile-menu show-for-small-only"><i class="fa fa-bars" aria-hidden="true"></i></div>
-      <div class="top-bar-left">
-        <ul class="menu">
-          <li class="menu-text"><div class="logo">
-            <a href="index.php"><img src="documentation/logo/logo.svg" alt="logo"></a>
-          </div></li>
-          <li><a href="#">One</a></li>
+      <div class="mobile-menu hide-for-medium"><i class="fa fa-bars" aria-hidden="true"></i></div>
+      <div class="top-bar-left hide-for-medium">
+        <!-- <ul class="menu">
+          <li class="menu-text"> -->
+            <div class="logo">
+              <a href="index.php"><img src="img/logo-project.svg" alt="logo"></a>
+            </div>
+          </li>
+          <!-- <li><a href="#">One</a></li>
           <li><a href="#">Two</a></li>
-        </ul>
+        </ul> -->
       </div>
       <div class="top-bar-right">
         <ul class="main-menu">
+          <li class="menu-text hide-for-small-only">
+            <div class="logo">
+              <a href="index.php"><img src="img/logo-project.svg" alt="logo"></a>
+            </div>
+          </li>
+          <li><a href="#">One</a></li>
+          <li><a href="#">Two</a></li>
           <li><a href="#">Three</a></li>
           <li><a href="#">Four</a></li>
           <li><a href="#">Five</a></li>
-          <li><a href="#">Six</a></li>
+            <ul class="register">
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
         </ul>
       </div>
     </div>
@@ -63,50 +75,64 @@
 
     <div class="row column text-center">
       <h1>Changing the World Through Design</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
-      <a href="#" class="button large">Learn More</a>
-      <a href="#" class="button large hollow">Learn Less</a>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.<a href="#" class="btn large">Learn More</a></p>
     </div>
 
-    <hr>
 
-    <div class="row">
-      <div class="medium-6 large-3 columns">
+
+    <div class="features row expanded">
+
+      <div class="feat medium-6 large-3 columns">
+        <hr>
         <h3>Lorum</h3>
         <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+        <button class="btn">Read</button>
+        <!-- <hr> -->
       </div>
-      <div class="medium-6 large-3 columns">
+      <div class="feat medium-6 large-3 columns">
+        <hr>
         <h3>Ipsum</h3>
         <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+        <button class="btn">Read</button>
+        <!-- <hr> -->
       </div>
-      <div class="medium-6 large-3 columns">
+      <div class="feat medium-6 large-3 columns">
+        <hr>
         <h3>Dolor</h3>
         <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+        <button class="btn">Read</button>
+        <!-- <hr> -->
       </div>
-      <div class="medium-6 large-3 columns">
+      <div class="feat medium-6 large-3 columns">
+        <hr>
         <h3>Sit Amet</h3>
         <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+        <button class="btn">Read</button>
+        <!-- <hr> -->
       </div>
+
     </div>
 
-    <hr>
+
+
+
 
     <div class="row column">
       <div class="callout primary text-center">
-        <h3>Really Great Deals</h3>
+        <h1>Really Great Deals</h1>
         <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor.</p>
       </div>
     </div>
 
     <hr>
 
-    <div class="row">
-      <div class="large-6 columns">
+    <div class="thumbs row expanded">
+      <div class="thumb-item large-6 columns">
         <h4>Nulla At Nulla Justo, Eget</h4>
         <img class="thumbnail" src="http://placehold.it/700x250">
         <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in.</p>
       </div>
-      <div class="large-6 columns">
+      <div class="thumb-item large-6 columns">
         <h4>Nulla At Nulla Justo, Eget</h4>
         <img class="thumbnail" src="http://placehold.it/700x250">
         <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in.</p>
@@ -115,14 +141,20 @@
 
     <hr>
 
-    <div class="row column">
-      <ul class="menu">
-        <li><a href="#">One</a></li>
-        <li><a href="#">Two</a></li>
-        <li><a href="#">Three</a></li>
-        <li><a href="#">Four</a></li>
+    <footer class="page-footer row expanded">
+      <ul class="social-nav">
+        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
       </ul>
-    </div>
+    </footer>
+    <!-- <div class="social-nav">
+      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+    </div> -->
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script> -->

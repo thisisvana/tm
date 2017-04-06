@@ -425,7 +425,7 @@ html {
  * Basic styles for links
  */
 a {
-  color: #dddddd;
+  color: #eeebeb;
   text-decoration: none;
   display: block; }
 
@@ -481,13 +481,13 @@ h1 {
   padding: 1rem;
   margin: auto;
   font-weight: 500;
-  font-family: "Arya", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: #999999;
   font-size: 2rem; }
 
 h2 {
   font-size: 2rem;
-  color: #891f86;
+  color: #0683d2;
   font-family: "Oranienbaum", serif; }
 
 p {
@@ -2526,69 +2526,56 @@ body {
   margin: auto; }
   @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
     .logo {
-      width: 7rem; } }
+      width: 6rem; } }
   @media screen and (max-width: 39.9375rem) {
     .logo {
-      width: 6rem; } }
+      width: 6rem;
+      padding: 1rem; } }
+  .logo img {
+    width: 100%; }
 
-.side-b {
-  position: fixed;
-  background-color: #2b2b2b;
-  height: 100vh;
-  padding: 0 2rem; }
-  @media screen and (max-width: 39.9375rem) {
-    .side-b {
-      position: relative;
-      height: 100%; } }
-  .side-b .mobile-menu {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    font-size: 1.5rem; }
+.register {
+  border: 0.1rem solid #0683d2; }
+  .register li {
+    padding: 1rem;
+    width: 10rem; }
+    .register li:first-child {
+      background-color: #1e97e4; }
+    .register li:last-child {
+      background-color: #0683d2; }
+    .register li a {
+      color: white; }
+    .register li:hover {
+      opacity: 0.8; }
+
+.mobile-menu {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem; }
 
 li {
   list-style: none; }
 
+ul {
+  padding: 0; }
+
 .main-menu {
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
-  margin: 2rem 0; }
+  margin: 0; }
   @media screen and (max-width: 39.9375rem) {
     .main-menu {
       display: none;
-      margin-top: 2rem;
       background-color: #2b2b2b; } }
   .main-menu li {
-    text-transform: uppercase;
+    flex: 1;
+    font-size: 1rem;
     text-align: center;
     width: 100%;
     margin: auto; }
-    .main-menu li:first-child {
-      border: 0.2rem solid #e8951b; }
-      .main-menu li:first-child:hover {
-        background-color: #e8951b; }
-    .main-menu li:nth-child(2) {
-      border: 0.2rem solid #22a77e; }
-      .main-menu li:nth-child(2):hover {
-        background-color: #22a77e; }
-    .main-menu li:nth-child(3) {
-      border: 0.2rem solid #e6263c; }
-      .main-menu li:nth-child(3):hover {
-        background-color: #e6263c; }
-    .main-menu li:nth-child(4) {
-      border: 0.2rem solid #1173ba; }
-      .main-menu li:nth-child(4):hover {
-        background-color: #1173ba; }
-    .main-menu li:nth-child(5) {
-      border: 0.2rem solid #891f86; }
-      .main-menu li:nth-child(5):hover {
-        background-color: #891f86;
-        opacity: 0.7; }
-    .main-menu li:nth-child(6) {
-      border: 0.2rem solid #891f86;
-      background-color: #891f86; }
-      .main-menu li:nth-child(6):hover {
-        background-color: transparent; }
     @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
       .main-menu li {
         width: 100%;
@@ -2598,7 +2585,10 @@ li {
         width: 100%;
         font-size: 0.8rem; } }
   .main-menu a {
-    padding: 1rem; }
+    padding: 0.5rem;
+    color: #999999; }
+    .main-menu a:hover {
+      color: #0683d2; }
 
 .sub-form {
   padding: 0; }
@@ -2625,12 +2615,14 @@ form {
 .social-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 2rem; }
+  justify-content: center; }
   .social-nav li {
-    flex: 1;
-    align-items: center;
-    justify-content: center; }
+    width: 5rem; }
+    .social-nav li a {
+      color: #0683d2; }
+
+.page-footer {
+  background-color: #2b2b2b; }
 
 /**
  * Modal
@@ -2738,12 +2730,12 @@ form {
   top: 0;
   right: 0;
   padding: 1.125em;
-  color: #891f86;
+  color: #0683d2;
   background: #fff;
   border: 0; }
 
 .modal-close:hover {
-  color: #891f86; }
+  color: #0683d2; }
 
 /* Modal Content */
 .modal-content > *:first-child {
@@ -2787,16 +2779,16 @@ form {
       align-items: center;
       width: 3rem;
       height: 3rem;
-      border: 0.125rem solid #891f86;
+      border: 0.125rem solid #0683d2;
       border-radius: 50%;
-      color: #891f86; }
+      color: #0683d2; }
       .social-icons li a:hover {
         text-decoration: none;
         color: #ededed;
-        background-color: #891f86; }
+        background-color: #0683d2; }
 
 .footer-icon {
-  color: #891f86; }
+  color: #0683d2; }
 
 .footer-form-box {
   display: flex;
@@ -2806,7 +2798,7 @@ form {
   margin: 0 auto; }
   .footer-form-box input {
     flex-grow: 1;
-    border: 2px solid #891f86;
+    border: 2px solid #0683d2;
     background-color: transparent;
     padding-left: 1rem;
     font-size: 0.9rem; }
@@ -2819,8 +2811,8 @@ form {
   .footer-form-box button {
     border-radius: 0;
     width: 5rem;
-    background-color: #891f86;
-    border: 2px solid #891f86;
+    background-color: #0683d2;
+    border: 2px solid #0683d2;
     border-left: none;
     color: #2b2b2b; }
     .footer-form-box button:hover {
@@ -2832,21 +2824,46 @@ form {
   padding: 0.5rem 1rem;
   background-color: transparent;
   text-align: center;
-  color: #fefefe;
-  border: 0.2rem solid #891f86;
-  background-color: #891f86; }
+  color: #eeebeb;
+  border: 0.2rem solid #0683d2;
+  background-color: #0683d2; }
   .btn a {
     text-decoration: none; }
   .btn:hover {
-    border: 0.2rem solid #891f86;
+    border: 0.2rem solid #0683d2;
     background-color: transparent;
     color: #999999;
     cursor: pointer; }
 
 #bg-bar {
-  background-color: rgba(255, 255, 255, 0.65); }
+  background-color: #444444; }
   #bg-bar ul {
     background-color: transparent; }
+
+.orbit-container {
+  padding: 0; }
+
+.features {
+  background-color: #2b2b2b;
+  padding: 2rem; }
+
+.feat {
+  padding: 2rem; }
+
+.callout {
+  padding: 3rem; }
+
+.thumbs {
+  background-color: #eeebeb;
+  padding: 5rem; }
+
+.lead {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.text-center {
+  padding: 3rem; }
 
 .green-banner {
   background-color: #22a77e;
