@@ -11,16 +11,29 @@
 .features {
   background-color: $bg-color;
   padding: 2rem;
+
+  @media screen and (max-width: $mobile-max){
+    padding: 1rem;
+  }
 }
 .feat {
   padding: 2rem;
 }
 .callout {
   padding: 3rem;
+  @media screen and (max-width: $mobile-max){
+    padding: 1rem;
+  }
 }
 .thumbs {
   background-color: $lw;
   padding: 5rem;
+  // @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
+  //     width:20rem;
+  // }
+  @media screen and (max-width: $mobile-max){
+    padding: 1rem;
+  }
 }
 .lead {
   display: flex;
@@ -29,6 +42,9 @@
 }
 .text-center {
   padding: 3rem;
+  @media screen and (max-width: $mobile-max){
+    padding: 1.5rem;
+  }
   .btn{
     padding: 2rem;
     background-color: rgb(217, 97, 21);
@@ -37,6 +53,9 @@
       background-color: transparent;
       border: 0.1rem solid rgb(217, 97, 21);
 
+    }
+    @media screen and (max-width: $mobile-max){
+      margin: 0.2rem;
     }
   }
 }

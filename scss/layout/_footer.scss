@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 
   li {
     width: 5rem;
@@ -59,6 +59,12 @@
 }
 .footer-form-box{
     width: 30rem;
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
+        width:20rem;
+    }
+    @media screen and (max-width: $mobile-max){
+      width:15rem;
+    }
 }
 // .overlay {
 //   background-color: rgba(40, 44, 52, 0.9);

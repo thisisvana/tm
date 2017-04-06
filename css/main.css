@@ -2663,6 +2663,12 @@ form {
 
 .footer-form-box {
   width: 30rem; }
+  @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
+    .footer-form-box {
+      width: 20rem; } }
+  @media screen and (max-width: 39.9375rem) {
+    .footer-form-box {
+      width: 15rem; } }
 
 .btn {
   width: 10rem;
@@ -2691,16 +2697,25 @@ form {
 .features {
   background-color: #2f3336;
   padding: 2rem; }
+  @media screen and (max-width: 39.9375rem) {
+    .features {
+      padding: 1rem; } }
 
 .feat {
   padding: 2rem; }
 
 .callout {
   padding: 3rem; }
+  @media screen and (max-width: 39.9375rem) {
+    .callout {
+      padding: 1rem; } }
 
 .thumbs {
   background-color: #eeebeb;
   padding: 5rem; }
+  @media screen and (max-width: 39.9375rem) {
+    .thumbs {
+      padding: 1rem; } }
 
 .lead {
   display: flex;
@@ -2709,6 +2724,9 @@ form {
 
 .text-center {
   padding: 3rem; }
+  @media screen and (max-width: 39.9375rem) {
+    .text-center {
+      padding: 1.5rem; } }
   .text-center .btn {
     padding: 2rem;
     background-color: #d96115;
@@ -2716,6 +2734,9 @@ form {
     .text-center .btn:hover {
       background-color: transparent;
       border: 0.1rem solid #d96115; }
+    @media screen and (max-width: 39.9375rem) {
+      .text-center .btn {
+        margin: 0.2rem; } }
 
 .green-banner {
   background-color: #22a77e;
