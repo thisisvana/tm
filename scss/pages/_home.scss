@@ -5,6 +5,10 @@
     background-color: transparent;
   }
 }
+.active {
+  border-right: 0.2rem solid $brand-color;
+  border-left:0.2rem solid $brand-color; 
+}
 .orbit-container {
   padding: 0;
 }
@@ -18,6 +22,9 @@
 }
 .feat {
   padding: 2rem;
+  @media screen and (max-width: $mobile-max){
+    padding: 1rem;
+  }
 }
 .callout {
   padding: 3rem;

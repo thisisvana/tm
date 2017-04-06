@@ -58,6 +58,15 @@ for (i = 0; i < images.length; i++) {
        images[i].style.display = "none";
      }
 }
+
+
+
+  // var loc = window.location.pathname;
+  //
+  //  $('.main-menu').find('a').each(function() {
+  //    $(this).toggleClass('active', $(this).attr('href') == loc);
+  // });
+
 // $("#hide").click(function(){
 //     $("p").hide();
 // });

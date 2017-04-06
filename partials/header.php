@@ -15,8 +15,8 @@
     <script src="https://use.fontawesome.com/1845926a10.js"></script>
 </head>
 
-  <body>
-
+<body>
+  <header>
     <!-- Start Top Bar -->
     <div class="top-bar" id="bg-bar">
       <div class="mobile-menu hide-for-medium"><i class="fa fa-bars" aria-hidden="true"></i></div>
@@ -39,9 +39,9 @@
             </div>
           </li>
           <li><a href="index.php">Home</a></li>
-          <li><a href="#">Who we are</a></li>
-          <li><a href="#">What we do</a></li>
-          <li><a href="#">Four</a></li>
+          <li><a href="about.php">Who we are</a></li>
+          <li><a href="services.php">What we do</a></li>
+          <li><a href="testimonials.php">Testimonials</a></li>
           <li><a href="contact.php">Contact Us</a></li>
             <ul class="register">
               <li><a href="#">Sign Up</a></li>
@@ -50,4 +50,5 @@
         </ul>
       </div>
     </div>
+  </header>
     <!-- End Top Bar -->

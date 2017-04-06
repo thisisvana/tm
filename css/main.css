@@ -2691,6 +2691,10 @@ form {
   #bg-bar ul {
     background-color: transparent; }
 
+.active {
+  border-right: 0.2rem solid #0683d2;
+  border-left: 0.2rem solid #0683d2; }
+
 .orbit-container {
   padding: 0; }
 
@@ -2703,6 +2707,9 @@ form {
 
 .feat {
   padding: 2rem; }
+  @media screen and (max-width: 39.9375rem) {
+    .feat {
+      padding: 1rem; } }
 
 .callout {
   padding: 3rem; }
