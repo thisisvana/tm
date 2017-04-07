@@ -1,5 +1,5 @@
 <footer class="page-footer">
-  <div class="overlay">
+
 
     <div class="row">
       <div class="footer-box small-12 medium-12 large-12 columns">
@@ -10,7 +10,7 @@
         </div>
       </div>
     </div>
-  </div>
+
 </footer>
 <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 <?php

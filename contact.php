@@ -3,18 +3,11 @@
 
 
 
-      <div class="row expanded">
 
-      </div>
-      <div class="row expanded">
-
-
-
-      </div>
       <div class="row">
-          <div class="form-box  small-12 large-6 columns">
+          <!-- <div class="form-box  small-12 large-12 columns"> -->
             <h1>Contact us</h1>
-              <form class="contact-form" method="post" action="form_submit.html">
+              <form class="contact-form" method="post" action="#">
 
                   <label for="form-name">Name</label><br>
                   <input type="text" class="c-placeholder" id="form-name" name="cname" placeholder="Type your name" required /><br>
@@ -28,7 +21,7 @@
 
               </form>
           </div>
-          
+
       </div>
 
 

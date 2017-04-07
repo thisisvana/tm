@@ -1,0 +1,52 @@
+.services-container{
+    background-color: $lw;
+
+
+}
+.books{
+  margin-bottom: 6rem;
+}
+.services-description p{
+    padding: 1rem;
+    text-align: center;
+}
+.img-container {
+    position:relative;
+    width: 100%;
+    // height: 70%;
+    transition: all 0.7s ease;
+    padding: 1rem;
+
+}
+/*.img-container:hover{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}*/
+.textbox:hover {
+    opacity:1;
+     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.textbox {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+
+    background-color: rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+    box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+   -webkit-clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+.t-container {
+    margin: 2rem auto;
+    color: $mid-grey;
+    font-style: italic;
+    opacity: 0.6;
+
+}

@@ -4,6 +4,7 @@
   iframe {
     width:100%;
     border: none;
+    padding: 0;
   }
 }
 
@@ -16,20 +17,20 @@
 .contact-form {
     width: 100%;
     margin: 0;
-    background-color: rgba($brand-color, 1);
+    background-color: lighten($bg-color, 10%);
     font-family: sans-serif;
     padding: 2rem;
 }
-#signup-form {
-  width:100%;
-  background-color: white;
-  .btn{
-    color:$mid-grey;
-    &:hover{
-      background-color: $brand-color;
-    }
-  }
-}
+// #signup-form {
+//   width:100%;
+//   background-color: white;
+//   .btn{
+//     color:$mid-grey;
+//     &:hover{
+//       background-color: $brand-color;
+//     }
+//   }
+// }
 
 input[type="text"],input[type="password"], #form-message {
     display: block;
@@ -37,8 +38,12 @@ input[type="text"],input[type="password"], #form-message {
     background-color: #1D1D1E;
     border: none;
     outline: none;
-    line-height: 2.5;
+    line-height: 1.5;
+    color: $mid-grey;
     // border: 0.1rem solid $dark-grey;
+}
+#form-message{
+  height: 7rem;
 }
 input[type="submit"]{
     background-color: transparent;

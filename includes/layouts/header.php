@@ -9,19 +9,29 @@
         <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Arapey|Oranienbaum" rel="stylesheet">
-        
+
         <script src="https://use.fontawesome.com/1845926a10.js"></script>
     </head>
-    <body>
-    <body class="bg">
-        <header class="page-header admin-header">
 
-          <div class="row-expand">
-                <!-- Logo -->
-              <div class="small-6 medium-5 large-4 columns">
-                  <div class="logo">
-                      <img src="img/tga-logo.svg" alt="boutique hotel logo">
-                  </div>
-              </div>
-            </div>
-         </header>
+    <body class="bg">
+      <header>
+        <!-- Start Top Bar -->
+        <div class="top-bar" id="bg-bar">
+          <!-- <div class="mobile-menu hide-for-medium"><i class="fa fa-bars" aria-hidden="true"></i></div> -->
+
+          <div class="top-bar-right">
+            <ul class="main-menu">
+              <li class="menu-text">
+                <div class="logo">
+                  <a href="index.php"><img src="img/buscemi.svg" alt="logo"></a>
+                </div>
+              </li>
+              <li>Upload</li>
+              <li>Edit</li>
+              <li>Delete</li>
+
+            </ul>
+          </div>
+        </div>
+
+      </header>

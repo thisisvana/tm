@@ -39,7 +39,7 @@
             </div>
           </li>
           <li><a href="index.php">Home</a></li>
-          <li><a href="about.php">Works</a></li>
+          <li><a href="works.php">Works</a></li>
 
           <li><a href="contact.php">Contact Us</a></li>
             <ul class="register">

@@ -3,8 +3,9 @@
 // -----------------------------------------------------------------------------
 
 .logo {
-    width: 8rem;
+    width: 7.5rem;
     margin: auto;
+    padding: 0.5rem;
 
     @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
             // display: block;

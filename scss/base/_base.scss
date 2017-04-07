@@ -91,11 +91,17 @@ h1 {
   font-family: $text-font-stack;
   color: $mid-grey;
   font-size: 2rem;
+  @media screen and (max-width: $mobile-max){
+    font-size: 1.2rem;
+  }
 }
 h2{
   font-size: 2rem;
   color: $brand-color;
   font-family: $h2;
+}
+h3 {
+  font-weight: 400;
 }
 p {
     font-size: 1rem;
