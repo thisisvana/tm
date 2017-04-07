@@ -7,8 +7,10 @@
           <!-- <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
           <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button> -->
           <li class="orbit-slide is-active">
-            <img src="img/keyboard.jpg">
+            <img src="img/keyboard.jpg" alt="keyboard">
           </li>
+
+
           <!-- <li class="orbit-slide">
             <img src="http://placehold.it/1200x450">
           </li>
@@ -66,7 +68,7 @@
 
     </div>
 
-    <div class="row column">
+    <div class="about-section row column">
       <div class="callout primary text-center">
         <div class="people-img large-6 columns">
           <img class="p-img" src="img/silvana.jpg" alt="image">

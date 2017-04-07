@@ -1,3 +1,6 @@
+#sample-movie {
+  display: block !important;
+}
 #bg-bar {
   background-color: $bg-color;
 
@@ -10,24 +13,25 @@
   border-left:0.2rem solid $brand-color;
 }
 .orbit-container {
-  padding: 0;
+  padding:0;
 }
 .features {
   background-color: $bg-color;
-  padding: 2rem;
+  padding: 4rem 4rem;
 
   @media screen and (max-width: $mobile-max){
     padding: 1rem;
   }
 }
 .feat {
-  padding: 2rem;
+  padding: 4rem 2rem;
   @media screen and (max-width: $mobile-max){
     padding: 1rem;
   }
 }
 .callout {
-  padding: 3rem;
+  margin: 0 0 2rem;
+  padding: 2rem;
   @media screen and (max-width: $mobile-max){
     padding: 1rem;
   }
@@ -46,9 +50,26 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  p{
+    @media screen and (max-width: $mobile-max){
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  }
 }
 .text-center {
   padding: 3rem;
+  h1{
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
+      font-size: 1.5rem;
+      padding: 0;
+    }
+    @media screen and (max-width: $mobile-max){
+      font-size: 1rem;
+      padding: 0;
+    }
+  }
+
   @media screen and (max-width: $mobile-max){
     padding: 1.5rem;
   }
@@ -67,13 +88,37 @@
     }
   }
 }
+// .about-section{
+//   padding-bottom: 3rem;
+// }
 .p-img {
-    border-radius: 50%;
+
+    // border-radius: 50%;
     border: 0.1rem solid $light-grey;
-    margin: 3rem;
-    padding: 2rem;
+
+    // padding: 2rem;
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
+      width: 50%;
+      margin:auto;
+    }
+    @media screen and (max-width: $mobile-max){
+      margin: 0;
+      padding: 0;
+
+    }
 
 }
 .about-text {
-  padding: 5rem;
+
+  padding: 5rem 4rem 1rem;
+  border-top: 0.1rem solid $light-grey;
+  border-right: 0.1rem solid $light-grey;
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
+    border: none;
+    padding: 1rem;
+  }
+  @media screen and (max-width: $mobile-max){
+    padding: 1rem;
+    border: none;
+  }
 }

@@ -5,7 +5,7 @@
 <?php require_once("includes/layouts/header.php"); ?>
 
 <div class="upload-div row expanded">
-  <div class="admin-box large-3 columns">
+  <div class="admin-box large-12 columns">
 
 
     <form class="admin-form" enctype="multipart/form-data" method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>">
@@ -15,11 +15,15 @@
       <input class="inp" type="text" name="subtitle" id="subtitle" placeholder="Subtitle">
 
       <textarea class="t-area" type="text" name="description" id="desc" placeholder="Description"></textarea><br>
-      <input class="inp" type="number" name="price" placeholder="Price">
+      <!-- <input class="inp" type="number" name="price" placeholder="Price"> -->
       <input class="btn" type="submit" name="submit" value="Upload">
 
     </form>
+
   </div>
+
+</div>
+
 
     <?php
 
@@ -31,7 +35,7 @@
       $title =  mysqli_real_escape_string($connection, $_POST['title']);
       $subtitle =  mysqli_real_escape_string($connection, $_POST['subtitle']);
       $alt= mysqli_real_escape_string($connection, $_POST['description']);
-      $price = intval($_POST["price"]);
+      // $price = intval($_POST["price"]);
 
       $imageName = mysqli_real_escape_string($connection, $targetFile);
 
@@ -54,7 +58,7 @@
           if(move_uploaded_file($_FILES['imageUploaded']['tmp_name'], $targetFile)) {
             echo "<p>The File ". basename($_FILES['imageUploaded']['name']) . " has been uploaded.</p>";
 
-            $insert = "INSERT INTO book_tb (image, title, subtitle, description, price) VALUES ('" . $imageName . "', '".$title."' , '".$subtitle."' , '".$alt."', ". $price .")";
+            $insert = "INSERT INTO book_tb (image, title, subtitle, description) VALUES ('" . $imageName . "', '".$title."' , '".$subtitle."' , '".$alt."')";
             $resultInsert = mysqli_query($connection, $insert);
           }
           else {
@@ -65,7 +69,7 @@
     }
   ?>
 
-<div class="admin-display large-9 columns">
+<div class="admin-display large-12 columns">
   <div class="pack-form">
     <?php
       $query = "SELECT * FROM book_tb";
@@ -74,23 +78,23 @@
       $numberOfRows = mysqli_num_rows($result);
 
       if($numberOfRows > 0) {
-        echo "<table>";
-        echo "<th>Image</th><th>Title</th><th>Subtitle</th><th>Description</th><th>Price</th><th>Delete</th>";
+        echo "<table class='admin-table'>";
+        echo "<th>Image</th><th>Title</th><th>Subtitle</th><th>Description</th><th>Delete</th>";
         while($row = mysqli_fetch_assoc($result)) {
           $id = $row["id"];
           $image = $row["image"];
           $title = $row["title"];
           $sub = $row["subtitle"];
           $desc = $row["description"];
-          $price = $row["price"];
+
 
           echo "<tr>";
           echo "<td><img src='" . $image . "'</td>";
-          echo "<td><h4>".$title."<h4></td>";
-          echo "<td><h4>". $sub ."</h4></td>";
-          echo "<td>". $desc ."</td>";
-          echo "<td><h4>$".$price."</h4></td>";
-          echo "<td><a href='admin.php?delete=". $id ."'/>Delete</a></td>";
+          echo "<td><h5>".$title."<h5></td>";
+          echo "<td><p>". $sub ."</h4></p>";
+          echo "<td><p>". $desc ."</p></td>";
+          // echo "<td><h4>$".$price."</h4></td>";
+          echo "<td><a href='admin.php?delete=". $id ."'/><h2>Delete</h2></a></td>";
           echo "<tr>";
 
         }
@@ -109,6 +113,9 @@
 
   </div>
 </div>
+
+
+
 
 
 <?php require_once("includes/layouts/footer.php"); ?>

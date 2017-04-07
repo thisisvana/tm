@@ -1,3 +1,4 @@
+//mobile-menu
 $(function() {
 
   $('.mobile-menu').click(function(){
@@ -5,6 +6,24 @@ $(function() {
     $('.main-menu').toggle(400);
   });
 });
+//modal
+$( function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+
+    $( "#opener" ).on( "click", function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  } );
 
 //Slider for testimonilas start here
 

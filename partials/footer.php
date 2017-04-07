@@ -35,10 +35,12 @@
 </div>
 
 
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script> -->
 <script>
-  $(document).foundation();
+  // $(document).foundation();
 </script>
 <script src="js/main.js"></script>
 </body>

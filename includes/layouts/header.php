@@ -26,9 +26,9 @@
                   <a href="index.php"><img src="img/buscemi.svg" alt="logo"></a>
                 </div>
               </li>
-              <li>Upload</li>
-              <li>Edit</li>
-              <li>Delete</li>
+              <li><a href="edit.php">Edit</a></li>
+
+
 
             </ul>
           </div>
