@@ -1,105 +1,80 @@
-<?php include "partials/header.php"; ?>
+<?php include('partials/header.php'); ?>
+<?php include('partials/navbar.php'); ?>
+  <header>
+    <div class="page-header">
+      <div class="banner row expanded">
+        <img src="img/dj.jpg" alt="dj music knobs">
+        <h1>Trustworthy music</h1>
+        <p>Don't miss the deal of the month</p>
+        <a href="packages.php"><button class="btn-banner" name="button">Packages</button></a>
 
-
-    <div class="row columns">
-      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-        <ul class="orbit-container">
-          <!-- <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
-          <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button> -->
-          <li class="orbit-slide is-active">
-            <img src="img/keyboard.jpg" alt="keyboard">
-          </li>
-
-
-          <!-- <li class="orbit-slide">
-            <img src="http://placehold.it/1200x450">
-          </li>
-          <li class="orbit-slide">
-            <img src="http://placehold.it/1200x450">
-          </li>
-          <li class="orbit-slide">
-            <img src="http://placehold.it/1200x450">
-          </li> -->
-        </ul>
       </div>
     </div>
-
-    <div class="row columns text-center">
-      <h1>Changing the world through books on technology</h1>
-      <p class="lead">Order your copy of the 2017 edition of "Living with the tech" - 30% off on all preorders.<button class="btn"><a href="contact.php">Order here</a></button></p>
-    </div>
-
-
-
-    <div class="features row expanded">
-
-      <div class="feat medium-6 large-3 columns">
-        <img src="img/img2.jpg" alt="book cover">
-        <!-- <h3>Lorum</h3> -->
-        <hr>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
-        <button class="btn"><a href="#">Read</a></button>
-        <!-- <hr> -->
-      </div>
-      <div class="feat medium-6 large-3 columns">
-        <img src="img/img1.jpg" alt="book cover">
-        <!-- <h3>Ipsum</h3> -->
-        <hr>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
-        <button class="btn"><a href="#">Read</a></button>
-        <!-- <hr> -->
-      </div>
-      <div class="feat medium-6 large-3 columns">
-        <!-- <h3>Dolor</h3> -->
-        <img src="img/img3.jpg" alt="book cover">
-          <hr>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
-        <button class="btn"><a href="#">Read</a></button>
-        <!-- <hr> -->
-      </div>
-      <div class="feat medium-6 large-3 columns">
-        <!-- <h3>Sit Amet</h3> -->
-        <img src="img/img4.jpg" alt="book cover">
-        <hr>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
-        <button class="btn"><a href="#">Read</a></button>
-        <!-- <hr> -->
-      </div>
-
-    </div>
-
-    <div class="about-section row column">
-      <div class="callout primary text-center">
-        <div class="people-img large-6 columns">
-          <img class="p-img" src="img/silvana.jpg" alt="image">
+  </header>
+  <section>
+    <div class="mission">
+      <div class="row">
+        <div class="about">
+          <h1>Our Mission</h1>
+          <hr class="head-hr">
+          <p>Trustworthy Music provides professional DJ services to you at a reasonable price.
+            We are based in Siren, Wisconsin, and Farmington, Minnesota, allowing us to serve
+            the entire northwestern Wisconsin region along with the Twin Cities and surrounding areas.
+            Trustworthy Music is co-owned and operated by Joe Cremin and Steve Macke, and each have many
+            years of training and experience to provide you with the best service possible. We use high quality
+            equipment to ensure there are no technical difficulties during your event.
+            We have many years of experience in the DJ industry, and are glad to tailor our performance to your event.
+            Whether that means playing certain styles of music for your wedding or playing only edited and appropriate
+            songs for your school dance, we are happy to accommodate your needs! We pride ourselves in providing a great
+            night of entertainment for you, as well as not breaking your budget. We keep our prices very affordable,
+            but never sacrifice quality. Many companies charge over twice as much as we do, but we work hard to be the best value you will find.
+            With a HUGE selection of songs to choose from we have something for everyone.
+          </p>
         </div>
-        <div class="about-text large-6 columns">
-          <h1>Ellory Buscemi</h1>
-          <p>Ellory graduated from University of Bologna in 2005 with a degree in Computer Engineering. She has 11 years of experience in the industry.
-          Ellory created and wrote Boom Town, a column which appeared on the front page of the Wall Street Journal's Marketplace section and online.
-          She subsequently appeared on founded and served as the co-executive editor with Walt Mossberg. She wrote on technology for the paper.
-          During that period, she was cited as the most influential reporter covering the Internet by the Industry Standard magazine.
-        </p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="events">
+      <div class="row">
+        <div class="services">
+          <ul class="services-icons">
+            <li><img src="img/couple.svg" alt="married couple icon"><br><h4>Wedding</h4></li>
+            <li><img src="img/school.svg" alt="school book icon"><br><h4>School Dance</h4></li>
+            <li><img src="img/graduate.svg" alt="graduate icon"><br><h4>Graduation</h4></li>
+            <li><img src="img/business.svg" alt="business man icon"><br><h4>Corporate Events</h4></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="wedding-cta">
+    <div class="row">
+      <div class="wedding-para large-10 column">
+        <h3>Because a wedding is one of the largest events to plan, we have a dedicated wedding page to help you.</h3>
+      </div>
+      <div class="wedding-btn large-2 column">
+        <a href="weddings.php"><button class="btn" name="button">See Our wedding Page</button></a>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="contact-form">
+      <div class="row">
+        <div class="c-form">
+          <form class="form-c" action="#" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Phone Number">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button class="btn-form" type="submit" name="submit">Send</button>
+          </form>
+
         </div>
 
       </div>
+
     </div>
+  </section>
 
-    <!-- <hr> -->
-
-    <div class="thumbs row expanded">
-      <div class="thumb-item large-6 columns">
-        <h4>News & Events</h4>
-        <img class="thumbnail" src="img/ted.jpg">
-        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in.</p>
-      </div>
-      <div class="thumb-item large-6 columns">
-        <h4>Upcoming</h4>
-        <img class="thumbnail" src="img/nytech.jpg">
-        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in.</p>
-      </div>
-    </div>
-
-    <!-- <hr> -->
-
-<?php include "partials/footer.php"; ?>
+<?php include('partials/footer.php'); ?>

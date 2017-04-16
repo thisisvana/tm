@@ -1,26 +1,26 @@
 {
-  "name": "week12",
+  "name": "tm",
   "version": "1.0.0",
   "description": "",
   "main": "index.php",
   "scripts": {
-    "scss": "node-sass scss/styles.scss -o css",
+    "scss": "node-sass scss/main.scss -o css",
     "autoprefixer": "postcss -u autoprefixer -r css/*",
-    "serve": "browser-sync start --proxy localhost/T2week12 --files css/*.css, js/*.js, *.html, *.php, partials/*.php --browser Chrome",
+    "serve": "browser-sync start --proxy localhost/tm --files css/*.css, js/*.js, *.html, *.php, partials/*.php --browser Chrome",
     "buildcss": "npm run scss && npm run autoprefixer",
     "watchcss": "onchange \"scss\" -- npm run buildcss",
     "watchall": "npm-run-all -p serve watchcss"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thisisvana/T2week12.git"
+    "url": "git+https://github.com/thisisvana/tm.git"
   },
-  "author": "silvana",
+  "author": "Silvana Agolli",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thisisvana/T2week12/issues"
+    "url": "https://github.com/thisisvana/tm/issues"
   },
-  "homepage": "https://github.com/thisisvana/T2week12#readme",
+  "homepage": "https://github.com/thisisvana/tm#readme",
   "devDependencies": {
     "autoprefixer": "^6.7.2",
     "browser-sync": "^2.18.7",

@@ -4,7 +4,29 @@
 
 .btn {
         width: 10rem;
-        padding: 0.5rem 1rem;
+        padding: 1rem;
+        background-color: transparent;
+        text-align: center;
+        color: $lw;
+        border: 0.1rem solid $btn-banner;
+        background-color: $btn-banner;
+        a{
+          text-decoration: none;
+          // &:hover {
+          //   color: $mid-grey;
+          // }
+        }
+        &:hover {
+          border: 0.1rem solid $btn-banner;
+          background-color: transparent;
+          color: $dark-grey;
+          cursor: pointer;
+        }
+}
+
+.btn-form {
+        width: 10rem;
+        padding: 1rem;
         background-color: transparent;
         text-align: center;
         color: $lw;
@@ -19,6 +41,22 @@
           color: $mid-grey;
           cursor: pointer;
         }
-
-
+}
+.btn-banner {
+        width: 10rem;
+        padding: 1rem;
+        background-color: transparent;
+        text-align: center;
+        color: $lw;
+        border: 0.2rem solid $btn-banner;
+        background-color: transparent;
+        a{
+          text-decoration: none;
+        }
+        &:hover {
+          border: 0.2rem solid $btn-banner;
+          background-color: $btn-banner;
+          color: $mid-grey;
+          cursor: pointer;
+        }
 }
