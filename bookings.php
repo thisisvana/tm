@@ -1,10 +1,22 @@
 <?php include('partials/header.php'); ?>
 <?php include('partials/navbar.php'); ?>
-<div class="expanded row">
-  <div class="row inside-main-hero">
-    <h1>bookings</h1>
-    <hr>
+<section>
+  <div class="inner-hero">
+    <div class="row expanded">
+      <div class="inner-banner">
+        <img src="img/banner.jpg" alt="wedding dj">
+      </div>
+    </div>
   </div>
+</section>
+<div class="page-title row">
+  <h1>Bookings</h1>
+  <hr class="head-hr">
+<!-- <div class="expanded row">
+  <div class="row inside-main-hero">
+    <h1>bookings</h1> -->
+    <hr>
+  <!-- </div> -->
 </div>
 <section class="row small-collapse">
   <form class="booking-form" action="#" method="post">
@@ -62,7 +74,7 @@
       </div>
     </div>
     <div class="row submit-button">
-      <input type="submit" name="b-submit" value="book">
+      <input class="btn-form" type="submit" name="b-submit" value="book">
     </div>
   </form>
 

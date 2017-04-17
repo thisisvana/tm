@@ -13,6 +13,7 @@
   <div class="page-title row">
     <h1>Our Packages</h1>
     <hr class="head-hr">
+    <hr>
     <div class="cta-para">
       <p>We have two packages available to fit your needs, but feel free to Contact us for a custom quote.</p>
       <a href="contact.php"><button class="btn-form" name="button">Contact us</button></a>

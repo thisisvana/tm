@@ -22,6 +22,7 @@
   opacity: 0.8;
   @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
     width: 25%;
+    top: 3%;
 
   }
   @media screen and (max-width: $mobile-max){
@@ -64,20 +65,20 @@
     flex-direction: column;
     padding: 2rem;
     display: none;
-    top: 13%;
+    top: 12%;
+    right: 0;
     background-color: $bg-color;
-    width: 40%;
+    width: 50%;
 
   }
   @media screen and (max-width: $mobile-max){
     flex-direction: column;
     padding: 2rem;
     display: none;
-    top: 12%;
+    top: 13%;
+    right: 0;
     background-color: $bg-color;
-    width: 40%;
-    // background-color: $bg-color;
-    // opacity: 0.8;
+    width: 100%;
   }
 }
 .nav-hr {

@@ -2550,7 +2550,8 @@ body {
   opacity: 0.8; }
   @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
     .logo {
-      width: 25%; } }
+      width: 25%;
+      top: 3%; } }
   @media screen and (max-width: 39.9375rem) {
     .logo {
       width: 25%;
@@ -2582,17 +2583,19 @@ body {
       flex-direction: column;
       padding: 2rem;
       display: none;
-      top: 13%;
+      top: 12%;
+      right: 0;
       background-color: #2f3336;
-      width: 40%; } }
+      width: 50%; } }
   @media screen and (max-width: 39.9375rem) {
     .main-menu {
       flex-direction: column;
       padding: 2rem;
       display: none;
-      top: 12%;
+      top: 13%;
+      right: 0;
       background-color: #2f3336;
-      width: 40%; } }
+      width: 100%; } }
 
 .nav-hr {
   opacity: 0.5; }
@@ -2734,7 +2737,7 @@ body {
       padding: 2rem; } }
 
 .head-hr {
-  margin: 0 0 3rem 3rem;
+  margin: 0 0 3rem 1.3rem;
   width: 5rem;
   border: 0.2rem solid #267aef; }
 
@@ -2834,10 +2837,18 @@ body {
     width: 100%; }
 
 .page-title {
-  padding: 1rem 4rem; }
+  padding: 1rem 3rem; }
+  .page-title p {
+    font-style: italic; }
 
 .packages {
   padding: 2rem; }
+  @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
+    .packages {
+      padding: 1rem; } }
+  @media screen and (max-width: 39.9375rem) {
+    .packages {
+      padding: 1rem; } }
 
 .package-item {
   border: 0.2rem solid white;
@@ -2858,10 +2869,10 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    height: 40rem; }
+    height: 30rem; }
     .package-item ul li {
       list-style: none;
-      padding: 0.5rem;
+      padding: 0.2rem;
       font-size: 1rem; }
       .package-item ul li a:hover {
         color: #444444; }

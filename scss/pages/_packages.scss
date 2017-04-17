@@ -9,10 +9,20 @@
 
 }
 .page-title {
-  padding: 1rem 4rem;
+  padding: 1rem 3rem;
+  p {
+    font-style: italic;
+  }
 }
 .packages {
   padding: 2rem;
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
+    padding: 1rem;
+
+  }
+  @media screen and (max-width: $mobile-max){
+    padding: 1rem;
+  }
 
 }
 .package-item {
@@ -38,10 +48,10 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    height: 40rem;
+    height: 30rem;
     li {
       list-style: none;
-      padding: 0.5rem;
+      padding: 0.2rem;
       font-size: 1rem;
 
       a {
@@ -53,6 +63,7 @@
     @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
       height: 100%;
       justify-content: flex-start;
+
     }
     @media screen and (max-width: $mobile-max){
       height: 100%;
