@@ -2527,18 +2527,28 @@ body {
   position: absolute;
   width: 1px; }
 
+.top-right-info {
+  position: absolute;
+  z-index: 1000;
+  top: 0.8rem;
+  right: 1.3rem;
+  font-size: 1.1rem;
+  color: #eeebeb; }
+
 .mobile-menu {
   position: absolute;
   z-index: 99;
-  top: 1.5rem;
-  right: 1.5rem; }
+  top: 2.5rem;
+  right: 1.5rem;
+  color: #eeebeb;
+  font-size: 1.7rem; }
 
 .logo {
   width: 15%;
   position: absolute;
   z-index: 111;
-  top: 5%;
-  left: 5%;
+  top: 7%;
+  left: 7%;
   opacity: 0.8; }
   @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
     .logo {
@@ -2557,6 +2567,7 @@ body {
   right: 5%;
   z-index: 100; }
   .main-menu li {
+    text-align: center;
     list-style: none;
     padding: 1rem;
     font-size: 1.1rem; }
@@ -2569,11 +2580,21 @@ body {
         color: #267aef; }
   @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
     .main-menu {
-      flex-direction: column; } }
+      flex-direction: column;
+      flex-direction: column;
+      padding: 2rem;
+      display: none;
+      top: 13%;
+      background-color: #2f3336;
+      width: 40%; } }
   @media screen and (max-width: 39.9375rem) {
     .main-menu {
       flex-direction: column;
-      padding: 0.2rem; } }
+      padding: 2rem;
+      display: none;
+      top: 12%;
+      background-color: #2f3336;
+      width: 40%; } }
 
 .nav-hr {
   opacity: 0.5; }
@@ -2661,16 +2682,48 @@ body {
     position: absolute;
     top: 35%;
     left: 5%; }
+    @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
+      .banner h1 {
+        font-size: 2rem; } }
+    @media screen and (max-width: 39.9375rem) {
+      .banner h1 {
+        font-size: 1.3rem;
+        width: 5rem;
+        top: 25%; } }
   .banner p {
     position: absolute;
     top: 42%;
     left: 7%;
     font-size: 2rem;
     color: #eeebeb; }
+    @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
+      .banner p {
+        font-size: 1rem;
+        top: 44%;
+        left: 8%; } }
+    @media screen and (max-width: 39.9375rem) {
+      .banner p {
+        font-size: 1.2rem;
+        position: relative;
+        color: #999999; } }
   .banner .btn-banner {
     position: absolute;
     top: 52%;
     left: 7%; }
+    @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
+      .banner .btn-banner {
+        top: 55%;
+        left: 8%; } }
+    @media screen and (max-width: 39.9375rem) {
+      .banner .btn-banner {
+        position: relative;
+        margin-bottom: 2rem;
+        color: #eeebeb;
+        background-color: #b328ad;
+        border: 0.1rem solid #b328ad; }
+        .banner .btn-banner:hover {
+          background-color: transparent;
+          color: #444444; } }
 
 .mission {
   background-color: #2f3336;
@@ -2691,14 +2744,14 @@ body {
   background-color: #267aef;
   padding: 5rem; }
 
-.wedding-cta {
+.cta {
   background-color: #eeebeb;
   padding: 8rem; }
   @media screen and (max-width: 39.9375rem) {
-    .wedding-cta {
+    .cta {
       padding: 2rem; } }
 
-.wedding-btn {
+.cta-btn {
   padding: 2rem 1rem; }
 
 .contact-form {
@@ -2745,7 +2798,8 @@ body {
           width: 3rem; } }
       @media screen and (max-width: 39.9375rem) {
         .services-icons li img {
-          width: 3rem; } }
+          width: 3rem;
+          margin: auto; } }
     @media screen and (max-width: 39.9375rem) {
       .services-icons li {
         padding: 1rem; } }
@@ -2754,7 +2808,8 @@ body {
       justify-content: center; } }
   @media screen and (max-width: 39.9375rem) {
     .services-icons {
-      flex-direction: column; } }
+      flex-direction: column;
+      justify-content: center; } }
 
 .booking-form {
   margin: 0 auto;
@@ -2772,5 +2827,43 @@ body {
     margin: 2rem auto; }
   .booking-form .submit-button {
     text-align: center; }
+
+.inner-banner {
+  position: relative;
+  height: 45vh;
+  overflow: hidden; }
+  .inner-banner img {
+    width: 100%; }
+
+.page-title {
+  padding: 1rem 4rem; }
+
+.packages {
+  padding: 2rem; }
+
+.package-item {
+  border: 0.2rem solid white;
+  background-color: #eeebeb;
+  padding: 0;
+  margin-bottom: 1rem; }
+  .package-item:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2); }
+  .package-item h3 {
+    text-align: center;
+    background-color: #267aef;
+    color: #eeebeb;
+    padding: 1.5rem; }
+  .package-item h2 {
+    text-align: center; }
+  .package-item ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 40rem; }
+    .package-item ul li {
+      list-style: none;
+      padding: 0.5rem;
+      font-size: 1rem; }
 
 /*# sourceMappingURL=main.css.map */

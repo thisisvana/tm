@@ -14,6 +14,17 @@
     position: absolute;
     top: 35%;
     left: 5%;
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
+      font-size: 2rem;
+
+
+    }
+    @media screen and (max-width: $mobile-max){
+      font-size: 1.3rem;
+      width: 5rem;
+      top: 25%;
+
+    }
   }
   p {
     position: absolute;
@@ -21,11 +32,41 @@
     left: 7%;
     font-size: 2rem;
     color: $lw;
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
+      font-size: 1rem;
+      top: 44%;
+      left: 8%;
+
+    }
+    @media screen and (max-width: $mobile-max){
+      font-size: 1.2rem;
+      position: relative;
+      color: $mid-grey;
+
+    }
   }
   .btn-banner {
     position: absolute;
     top: 52%;
     left: 7%;
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
+      top: 55%;
+      left: 8%;
+
+
+    }
+    @media screen and (max-width: $mobile-max){
+      position: relative;
+      margin-bottom: 2rem;
+      color: $lw;
+      background-color: $btn-banner;
+      border: 0.1rem solid $btn-banner;
+      &:hover {
+        background-color: transparent;
+        color: $dark-grey;
+      }
+
+    }
   }
 }
 
@@ -50,7 +91,7 @@
   background-color: $brand-color;
   padding: 5rem;
 }
-.wedding-cta {
+.cta {
   background-color: $lw;
   padding: 8rem;
   @media screen and (max-width: $mobile-max){
@@ -58,7 +99,7 @@
   }
 
 }
-.wedding-btn {
+.cta-btn {
   padding: 2rem 1rem;
 }
 .contact-form {
@@ -109,6 +150,7 @@
         }
         @media screen and (max-width: $mobile-max){
           width: 3rem;
+          margin: auto;
         }
       }
       @media screen and (max-width: $mobile-max){
@@ -122,7 +164,7 @@
 
     @media screen and (max-width: $mobile-max){
       flex-direction: column;
+      justify-content: center;
 
     }
-
 }

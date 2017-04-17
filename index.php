@@ -39,21 +39,21 @@
       <div class="row">
         <div class="services">
           <ul class="services-icons">
-            <li><img src="img/couple.svg" alt="married couple icon"><br><h4>Wedding</h4></li>
-            <li><img src="img/school.svg" alt="school book icon"><br><h4>School Dance</h4></li>
-            <li><img src="img/graduate.svg" alt="graduate icon"><br><h4>Graduation</h4></li>
-            <li><img src="img/business.svg" alt="business man icon"><br><h4>Corporate Events</h4></li>
+            <li><img src="img/couple.svg" alt="married couple icon"><h4>Wedding</h4></li>
+            <li><img src="img/school.svg" alt="school book icon"><h4>School Dance</h4></li>
+            <li><img src="img/graduate.svg" alt="graduate icon"><h4>Graduation</h4></li>
+            <li><img src="img/business.svg" alt="business man icon"><h4>Corporate Events</h4></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-  <div class="wedding-cta">
+  <div class="cta">
     <div class="row">
-      <div class="wedding-para large-10 column">
+      <div class="cta-para large-10 column">
         <h3>Because a wedding is one of the largest events to plan, we have a dedicated wedding page to help you.</h3>
       </div>
-      <div class="wedding-btn large-2 column">
+      <div class="cta-btn large-2 column">
         <a href="weddings.php"><button class="btn" name="button">See Our wedding Page</button></a>
       </div>
     </div>

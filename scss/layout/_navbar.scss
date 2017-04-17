@@ -1,15 +1,25 @@
+.top-right-info {
+  position: absolute;
+  z-index: 1000;
+  top: 0.8rem;
+  right: 1.3rem;
+  font-size: 1.1rem;
+  color: $lw;
+}
 .mobile-menu {
   position: absolute;
   z-index: 99;
-  top: 1.5rem;
+  top: 2.5rem;
   right: 1.5rem;
+  color: $lw;
+  font-size: 1.7rem;
 }
 .logo {
   width: 15%;
   position: absolute;
   z-index: 111;
-  top: 5%;
-  left: 5%;
+  top: 7%;
+  left: 7%;
   opacity: 0.8;
   @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
     width: 25%;
@@ -22,6 +32,7 @@
 }
 
 .main-menu {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,12 +40,15 @@
   top: 5%;
   right: 5%;
   z-index: 100;
+
   li {
+    text-align: center;
     list-style: none;
     padding: 1rem;
     font-size: 1.1rem;
     @media screen and (max-width: $mobile-max){
       padding: 0.5rem;
+
 
     }
     a {
@@ -48,12 +62,21 @@
   }
   @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
     flex-direction: column;
-
+    flex-direction: column;
+    padding: 2rem;
+    display: none;
+    top: 13%;
+    background-color: $bg-color;
+    width: 40%;
 
   }
   @media screen and (max-width: $mobile-max){
     flex-direction: column;
-    padding: 0.2rem;
+    padding: 2rem;
+    display: none;
+    top: 12%;
+    background-color: $bg-color;
+    width: 40%;
     // background-color: $bg-color;
     // opacity: 0.8;
   }
