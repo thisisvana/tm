@@ -1,15 +1,14 @@
 .top-right-info {
   position: absolute;
   z-index: 1000;
-  top: 0.8rem;
+  top: 0;
   right: 1.3rem;
-  font-size: 1.1rem;
-  color: $lw;
+
 }
 .mobile-menu {
   position: absolute;
   z-index: 99;
-  top: 2.5rem;
+  top: 3rem;
   right: 1.5rem;
   color: $lw;
   font-size: 1.7rem;

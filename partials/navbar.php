@@ -18,7 +18,7 @@
     <!-- </div> -->
   </div>
   <div class="top-right-info">
-    <i class="footer-icon fa fa-phone" aria-hidden="true">&nbsp;612-987-2608</i>
+    <a href="callto://16129872608"><p><i class="footer-icon fa fa-phone" aria-hidden="true">&nbsp;612-987-2608</i></p></a>
     <!-- <i class="fa fa-envelope-o footer-icon" aria-hidden="true">&nbsp;info@trustworthymusic.com</i> -->
 
   </div>

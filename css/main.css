@@ -2530,15 +2530,13 @@ body {
 .top-right-info {
   position: absolute;
   z-index: 1000;
-  top: 0.8rem;
-  right: 1.3rem;
-  font-size: 1.1rem;
-  color: #eeebeb; }
+  top: 0;
+  right: 1.3rem; }
 
 .mobile-menu {
   position: absolute;
   z-index: 99;
-  top: 2.5rem;
+  top: 3rem;
   right: 1.5rem;
   color: #eeebeb;
   font-size: 1.7rem; }
@@ -2865,5 +2863,15 @@ body {
       list-style: none;
       padding: 0.5rem;
       font-size: 1rem; }
+      .package-item ul li a:hover {
+        color: #444444; }
+    @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
+      .package-item ul {
+        height: 100%;
+        justify-content: flex-start; } }
+    @media screen and (max-width: 39.9375rem) {
+      .package-item ul {
+        height: 100%;
+        justify-content: flex-start; } }
 
 /*# sourceMappingURL=main.css.map */
