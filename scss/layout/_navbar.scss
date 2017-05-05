@@ -8,7 +8,7 @@
 .mobile-menu {
   position: absolute;
   z-index: 99;
-  top: 3rem;
+  top: 1rem;
   right: 1.5rem;
   color: $lw;
   font-size: 1.7rem;
@@ -54,7 +54,7 @@
     a {
       color: $light-grey;
       &:hover {
-        color: $brand-color;
+        color: $btn-banner;
       }
     }
 
@@ -67,7 +67,7 @@
     display: none;
     top: 12%;
     right: 0;
-    background-color: $bg-color;
+    background-color: $brand-color;
     width: 50%;
 
   }
@@ -75,9 +75,9 @@
     flex-direction: column;
     padding: 2rem;
     display: none;
-    top: 13%;
+    top: 3%;
     right: 0;
-    background-color: $bg-color;
+    background-color: $brand-color;
     width: 100%;
   }
 }

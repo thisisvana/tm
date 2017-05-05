@@ -481,7 +481,7 @@ h1 {
   padding: 1rem;
   margin: auto;
   font-weight: 500;
-  font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Philosopher", sans-serif;
   color: #999999;
   font-size: 2rem; }
   @media screen and (max-width: 39.9375rem) {
@@ -2536,7 +2536,7 @@ body {
 .mobile-menu {
   position: absolute;
   z-index: 99;
-  top: 3rem;
+  top: 1rem;
   right: 1.5rem;
   color: #eeebeb;
   font-size: 1.7rem; }
@@ -2576,7 +2576,7 @@ body {
     .main-menu li a {
       color: #ededed; }
       .main-menu li a:hover {
-        color: #267aef; }
+        color: #b328ad; }
   @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
     .main-menu {
       flex-direction: column;
@@ -2585,16 +2585,16 @@ body {
       display: none;
       top: 12%;
       right: 0;
-      background-color: #2f3336;
+      background-color: #267aef;
       width: 50%; } }
   @media screen and (max-width: 39.9375rem) {
     .main-menu {
       flex-direction: column;
       padding: 2rem;
       display: none;
-      top: 13%;
+      top: 3%;
       right: 0;
-      background-color: #2f3336;
+      background-color: #267aef;
       width: 100%; } }
 
 .nav-hr {
@@ -2660,7 +2660,7 @@ body {
   padding: 1rem;
   background-color: transparent;
   text-align: center;
-  color: #eeebeb;
+  color: white;
   border: 0.2rem solid #b328ad;
   background-color: transparent; }
   .btn-banner a {
@@ -2668,21 +2668,24 @@ body {
   .btn-banner:hover {
     border: 0.2rem solid #b328ad;
     background-color: #b328ad;
-    color: #999999;
+    color: #eeebeb;
     cursor: pointer; }
 
 .banner {
-  position: relative; }
-  .banner img {
-    width: 100%; }
+  position: relative;
+  background-color: #267aef;
+  height: 80vh; }
   .banner h1 {
+    font-family: 'Signika', sans-serif;
+    letter-spacing: 0.4rem;
     color: #eeebeb;
     font-size: 4rem;
+    text-align: right;
     text-transform: uppercase;
     font-weight: 600;
     position: absolute;
-    top: 35%;
-    left: 5%; }
+    top: 30%;
+    right: 15%; }
     @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
       .banner h1 {
         font-size: 2rem; } }
@@ -2691,6 +2694,18 @@ body {
         font-size: 1.3rem;
         width: 5rem;
         top: 25%; } }
+  .banner .win-monster {
+    position: absolute;
+    top: 35%;
+    left: 5%; }
+  .banner .banner-heading {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s; }
+  .banner .roll {
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s; }
+  .banner .fact-icon, .banner .fact-count {
+    color: #fff; }
   .banner p {
     position: absolute;
     top: 42%;
@@ -2709,26 +2724,39 @@ body {
         color: #999999; } }
   .banner .btn-banner {
     position: absolute;
-    top: 52%;
-    left: 7%; }
+    top: 60%;
+    right: 16%;
+    letter-spacing: 0.1rem;
+    padding: 3rem;
+    padding-left: 1rem;
+    text-align: left; }
     @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
       .banner .btn-banner {
         top: 55%;
-        left: 8%; } }
+        right: 8%; } }
     @media screen and (max-width: 39.9375rem) {
       .banner .btn-banner {
-        position: relative;
         margin-bottom: 2rem;
         color: #eeebeb;
         background-color: #b328ad;
-        border: 0.1rem solid #b328ad; }
+        border: 0.1rem solid #b328ad;
+        top: 65%;
+        right: 8%; }
         .banner .btn-banner:hover {
           background-color: transparent;
           color: #444444; } }
 
+.win-cta {
+  text-align: right; }
+
 .mission {
-  background-color: #2f3336;
-  padding: 8rem 14rem; }
+  background-color: #0db482;
+  padding: 8rem; }
+  .mission h1 {
+    color: white;
+    font-family: "Arya", sans-serif; }
+  .mission p {
+    color: #fff; }
   @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
     .mission {
       padding: 6rem; } }
@@ -2739,6 +2767,8 @@ body {
 .head-hr {
   margin: 0 0 3rem 1.3rem;
   width: 5rem;
+  height: 0.1rem;
+  background-color: #267aef;
   border: 0.2rem solid #267aef; }
 
 .events {
@@ -2746,14 +2776,24 @@ body {
   padding: 5rem; }
 
 .cta {
-  background-color: #eeebeb;
-  padding: 8rem; }
+  padding: 0 8rem; }
   @media screen and (max-width: 39.9375rem) {
     .cta {
       padding: 2rem; } }
 
+.cta-div {
+  width: 100%;
+  margin: auto;
+  padding: 3rem; }
+  .cta-div h3 {
+    font-family: "Arya", sans-serif;
+    font-size: 2.5rem; }
+
 .cta-btn {
-  padding: 2rem 1rem; }
+  padding: 2rem 0; }
+  .cta-btn .btn {
+    padding: 2rem;
+    text-align: left; }
 
 .contact-form {
   padding: 4rem; }
@@ -2787,18 +2827,17 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between; }
-  .services-icons h4 {
-    color: #eeebeb; }
   .services-icons li {
     padding: 2rem;
-    flex: 1; }
-    .services-icons li img {
-      width: 5rem; }
+    flex: 1;
+    color: #fff; }
+    .services-icons li i {
+      font-size: 4rem; }
       @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
-        .services-icons li img {
+        .services-icons li i {
           width: 3rem; } }
       @media screen and (max-width: 39.9375rem) {
-        .services-icons li img {
+        .services-icons li i {
           width: 3rem;
           margin: auto; } }
     @media screen and (max-width: 39.9375rem) {
@@ -2811,6 +2850,9 @@ body {
     .services-icons {
       flex-direction: column;
       justify-content: center; } }
+
+.thumbs {
+  display: flex; }
 
 .booking-form {
   margin: 0 auto;
@@ -2829,20 +2871,63 @@ body {
   .booking-form .submit-button {
     text-align: center; }
 
+.admin-head {
+  display: flex; }
+
+.admin-form {
+  display: flex;
+  flex-direction: column; }
+
+.inp {
+  line-height: 2.5rem; }
+
+#desc {
+  width: 100%;
+  line-height: 7rem; }
+
+.upload-div {
+  display: flex;
+  margin: auto; }
+
+.admin-head {
+  height: 10rem; }
+  .admin-head h2 {
+    text-align: center;
+    font-size: 2.5rem; }
+
+.pack-form {
+  display: flex;
+  justify-content: space-between; }
+  .pack-form th {
+    color: #267aef; }
+  .pack-form td {
+    padding: 2rem;
+    border: 0.1rem solid #ededed;
+    background-color: #ededed;
+    font-weight: 300; }
+
 .inner-banner {
   position: relative;
-  height: 45vh;
-  overflow: hidden; }
-  .inner-banner img {
-    width: 100%; }
+  height: 40vh;
+  overflow: hidden;
+  background-color: #0db482; }
 
 .page-title {
+  position: absolute;
+  top: 25vh;
+  left: 10%;
   padding: 1rem 3rem; }
+  .page-title .head-hr {
+    background-color: #fff;
+    border-color: #fff; }
+  .page-title h1 {
+    color: #fff; }
   .page-title p {
     font-style: italic; }
 
 .packages {
-  padding: 2rem; }
+  background-color: #fff;
+  padding: 0; }
   @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
     .packages {
       padding: 1rem; } }
@@ -2851,31 +2936,37 @@ body {
       padding: 1rem; } }
 
 .package-item {
-  border: 0.2rem solid white;
-  background-color: #eeebeb;
-  padding: 0;
-  margin-bottom: 1rem; }
+  background-color: #267aef;
+  padding: 0; }
   .package-item:hover {
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2); }
   .package-item h3 {
     text-align: center;
-    background-color: #267aef;
-    color: #eeebeb;
+    font-size: 2rem;
+    color: #fff;
     padding: 1.5rem; }
   .package-item h2 {
-    text-align: center; }
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.3rem; }
   .package-item ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    height: 30rem; }
+    height: 30%;
+    padding: 5rem; }
     .package-item ul li {
       list-style: none;
       padding: 0.2rem;
-      font-size: 1rem; }
+      font-size: 1rem;
+      color: #fff; }
       .package-item ul li a:hover {
         color: #444444; }
+      .package-item ul li img {
+        width: 50rem;
+        object-fit: cover;
+        padding: 1rem 0 0 5rem; }
     @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
       .package-item ul {
         height: 100%;
@@ -2884,5 +2975,34 @@ body {
       .package-item ul {
         height: 100%;
         justify-content: flex-start; } }
+
+.modal {
+  background-color: #267aef;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5rem; }
+  .modal .monster {
+    max-width: 900px; }
+    @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
+      .modal .monster {
+        width: 500px;
+        padding: 1rem; } }
+    @media screen and (max-width: 39.9375rem) {
+      .modal .monster {
+        width: 500px;
+        padding: 1rem; } }
+  @media screen and (min-width: 40rem) and (max-width: 63.9375rem) {
+    .modal {
+      padding: 1rem; } }
+  @media screen and (max-width: 39.9375rem) {
+    .modal {
+      padding: 1rem; } }
+
+.mons {
+  padding-bottom: 5rem; }
 
 /*# sourceMappingURL=main.css.map */

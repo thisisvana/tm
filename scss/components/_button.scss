@@ -47,7 +47,7 @@
         padding: 1rem;
         background-color: transparent;
         text-align: center;
-        color: $lw;
+        color: rgb(255, 255, 255);
         border: 0.2rem solid $btn-banner;
         background-color: transparent;
         a{
@@ -56,7 +56,7 @@
         &:hover {
           border: 0.2rem solid $btn-banner;
           background-color: $btn-banner;
-          color: $mid-grey;
+          color: $lw;
           cursor: pointer;
         }
 }

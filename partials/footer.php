@@ -1,12 +1,7 @@
 		<footer class="row expanded main-footer">
 			<div class="row">
-					<div class="small-12 medium-12 large-4 column main-footer-address">
-						<h2>adress</h2>
-						<p>19834 Butternut Trail <br> Farmington, MN 55024</p>
-						<a href="callto://16129872608"><p><i class="footer-icon fa fa-phone" aria-hidden="true">&nbsp;612-987-2608</i></p></a>
-				    <a href="malito:info@trustworthymusic.com"><p><i class="fa fa-envelope-o footer-icon" aria-hidden="true">&nbsp;info@trustworthymusic.com</i></p></a>
-					</div>
-					<div class="small-12 medium-12 large-4 column main-footer-social">
+
+					<div class="small-12 medium-12 large-12 column main-footer-social">
 						<h2>social networks</h2>
 						<p>
 							<i class="fa fa-twitter" aria-hidden="true"></i>
@@ -14,14 +9,11 @@
 							<i class="fa fa-instagram" aria-hidden="true"></i>
 						</p>
 					</div>
-					<div class="small-12 medium-12 large-4 column main-footer-cities">
-						<h2>towns we've worked</h2>
-						<p><strong>Wisconsin</strong>: Webster, Siren, Frederic, Grantsburg, Danbury, Spooner, Rice Lake, Chetek, Superior, River Falls, Madison, Milltown, Balsam Lake, Dresser, St. Croix Falls, Birchwood. <strong>Minnesota</strong>: Hinckley, Duluth, Hastings, Brooklyn Center, Maple Grove, Farmington, Minneapolis, Saint Paul, Arden Hills, Glenwood, Redwood Falls</p>
-					</div>
+
 			</div>
 		</footer>
 		<footer class="row expanded sub-footer">
-			<p>&copy;2003-2016 Trustworthy Music. All rights reserved.</p>
+			<p>&copy;2016 Play Fun Inc. All rights reserved.</p>
 		</footer>
 
 
